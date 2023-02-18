@@ -23,5 +23,5 @@ export const updateCourse = asyncHandler(async (req, res) => {
 
 export const deleteCourse = asyncHandler(async (req, res) => {
     const numRows = await courseService.deleteCourse(req.params.id);
-    numRows > 0 ? res.status(204).end() : sendNotFound(res, 'Course not found');
+    numRows ? res.status(204).end() : sendNotFound(res, 'Course not found');
 });

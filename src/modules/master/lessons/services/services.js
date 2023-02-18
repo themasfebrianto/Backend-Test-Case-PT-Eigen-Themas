@@ -1,26 +1,30 @@
-import Course from '../models/model.js';
+import Lessons from '../models/model.js';
 
-export const getAllCourses = async () => {
-    return Course.findAll();
+export const getAllLessons = async () => {
+    return await Lessons.findAll();
 };
 
-export const getCourseById = async (id) => {
-    return Course.findByPk(id);
+export const getLessonById = async (id) => {
+    return await Lessons.findByPk(id);
 };
 
-export const createCourse = async (courseData) => {
-    const course = new Course(courseData);
-    return course.save();
+export const createLesson = async (lessonData) => {
+    return await Lessons.create(lessonData);
 };
 
-export const updateCourse = async (id, courseData) => {
-    const [, [updatedCourse]] = await Course.update(courseData, {
-        returning: true,
-        where: { id }
-    });
-    return updatedCourse;
+export const updateLesson = async (id, lessonData) => {
+    const lesson = await Lessons.findByPk(id);
+    if (!lesson) {
+        return null;
+    }
+    return await lesson.update(lessonData);
 };
 
-export const deleteCourse = async (id) => {
-    return Course.destroy({ where: { id } });
+export const deleteLesson = async (id) => {
+    const lesson = await Lessons.findByPk(id);
+    if (!lesson) {
+        return 0;
+    }
+    await lesson.destroy();
+    return 1;
 };

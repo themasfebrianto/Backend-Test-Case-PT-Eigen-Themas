@@ -1,27 +1,18 @@
-import Sequelize from 'sequelize';
-import dotenv from "dotenv";
-dotenv.config();
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
-    dialect: 'postgres',
-    logging: false
-});
+import { sequelize, Sequelize } from '../../../../helpers/modelHelpers.js';
 
-const Course = sequelize.define('Course', {
+const Lessons = sequelize.define('Lessons', {
     name: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
     },
     code: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: false,
     },
     status: {
         type: Sequelize.STRING,
-        allowNull: false
-    }
-});
+        allowNull: false,
+    },
+}, { schema: 'public' });
 
-// sync the model with the database
-sequelize.sync();
-
-export default Course;
+export default Lessons;

@@ -13,6 +13,6 @@ const Course = sequelize.define('Course', {
         type: Sequelize.STRING,
         allowNull: false,
     },
-});
+}, { schema: 'public' });
 
 export default Course;

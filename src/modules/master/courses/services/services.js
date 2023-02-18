@@ -1,26 +1,29 @@
 import Course from '../models/model.js';
 
 export const getAllCourses = async () => {
-    return Course.findAll();
+    const courses = await Course.findAll();
+    return courses;
 };
 
 export const getCourseById = async (id) => {
-    return Course.findByPk(id);
+    const course = await Course.findByPk(id);
+    return course;
 };
 
 export const createCourse = async (courseData) => {
-    const course = new Course(courseData);
-    return course.save();
+    const course = await Course.create(courseData);
+    return course;
 };
 
 export const updateCourse = async (id, courseData) => {
-    const [, [updatedCourse]] = await Course.update(courseData, {
-        returning: true,
-        where: { id }
-    });
-    return updatedCourse;
+    const [numRows, [updatedCourse]] = await Course.update(
+        { name: courseData.name, code: courseData.code, status: courseData.status },
+        { where: { id }, returning: true }
+    );
+    return numRows > 0 ? updatedCourse : null;
 };
 
 export const deleteCourse = async (id) => {
-    return Course.destroy({ where: { id } });
+    const numRows = await Course.destroy({ where: { id } });
+    return numRows;
 };

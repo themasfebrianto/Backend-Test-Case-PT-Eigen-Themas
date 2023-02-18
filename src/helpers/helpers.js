@@ -6,6 +6,10 @@ export const asyncHandler = (fn) => (req, res, next) => {
     });
 };
 
+export const handleErrors = (res, error) => {
+    res.status(500).json({ message: error.message });
+};
+
 export const sendNotFound = (res, message) => {
     res.status(404).json({ message: message });
 };
