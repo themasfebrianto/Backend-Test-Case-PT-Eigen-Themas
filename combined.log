@@ -1,0 +1,16 @@
+2023-02-19 02:21:47 [myapp] info: [GET] /api/contents
+2023-02-19 02:22:12 [Flutter_backend] info: [GET] /api/contents
+2023-02-19 02:22:31 [Flutter_backend] info: [POST] /api/contents
+2023-02-19 02:34:23 [Flutter_backend] info: [GET] /api/courses
+2023-02-19 02:34:56 [Logging] info: [GET] /api/courses
+2023-02-19 02:35:10 [Logging] info: [GET] /api/courses/2
+2023-02-19 02:35:57 [Logging] info: [GET] /api/courses/2
+2023-02-19 02:46:06 [Logging] info: [GET] /api/lessons/2
+2023-02-19 02:46:21 [Logging] info: [GET] /api/courses
+2023-02-19 02:47:14 [Logging] info: [GET] /api/courses
+2023-02-19 02:47:18 [Logging] info: [GET] /api/lessons
+2023-02-19 02:49:54 [Logging] info: /api/lessons - [GET] /api/lessons
+2023-02-19 02:50:07 [Logging] info: /api/lessons/2 - [GET] /api/lessons/2
+2023-02-19 02:50:40 [Logging] info: [GET] /api/lessons/2
+2023-02-19 02:50:59 [Logging] info: [GET] /api/lessons/2
+2023-02-19 02:57:39 [Logging] info: [GET] /api/lessons/2
