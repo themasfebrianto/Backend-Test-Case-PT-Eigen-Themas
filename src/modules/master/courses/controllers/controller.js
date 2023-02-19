@@ -1,27 +1,27 @@
 import * as courseService from '../services/services.js';
-import { asyncHandler, sendNotFound, sendResponse } from '../../../../helpers/helpers.js';
+import { handleAsync } from '../../../../helpers/helpers.js';
 
-export const getCourses = asyncHandler(async (req, res) => {
+export const getCourses = handleAsync(async (req, res) => {
     const courses = await courseService.getAllCourses();
-    sendResponse(res, courses);
+    return courses;
 });
 
-export const getCourseById = asyncHandler(async (req, res) => {
+export const getCourseById = handleAsync(async (req, res) => {
     const course = await courseService.getCourseById(req.params.id);
-    course ? sendResponse(res, course) : sendNotFound(res, 'Course not found');
+    return course;
 });
 
-export const createCourse = asyncHandler(async (req, res) => {
+export const createCourse = handleAsync(async (req, res) => {
     const insertedCourse = await courseService.createCourse(req.body);
-    sendResponse(res.status(201), insertedCourse);
+    return insertedCourse;
 });
 
-export const updateCourse = asyncHandler(async (req, res) => {
+export const updateCourse = handleAsync(async (req, res) => {
     const updatedCourse = await courseService.updateCourse(req.params.id, req.body);
-    updatedCourse ? sendResponse(res, updatedCourse) : sendNotFound(res, 'Course not found');
+    return updatedCourse;
 });
 
-export const deleteCourse = asyncHandler(async (req, res) => {
+export const deleteCourse = handleAsync(async (req, res) => {
     const numRows = await courseService.deleteCourse(req.params.id);
-    numRows ? res.status(204).end() : sendNotFound(res, 'Course not found');
+    return numRows;
 });

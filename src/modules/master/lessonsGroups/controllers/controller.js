@@ -1,31 +1,27 @@
 import * as lessonsGroupsService from '../services/services.js';
-import { asyncHandler, sendNotFound, sendResponse } from '../../../../helpers/helpers.js';
+import { handleAsync } from '../../../../helpers/helpers.js';
 
-export const getAllLessonsGroups = asyncHandler(async (req, res) => {
+export const getAllLessonsGroups = handleAsync(async (req, res) => {
     const lessonsGroups = await lessonsGroupsService.getAllLessonsGroups();
-    sendResponse(res, lessonsGroups);
+    return lessonsGroups;
 });
 
-export const getLessonsGroupById = asyncHandler(async (req, res) => {
+export const getLessonsGroupById = handleAsync(async (req, res) => {
     const lessonsGroup = await lessonsGroupsService.getLessonsGroupById(req.params.id);
-    lessonsGroup ? sendResponse(res, lessonsGroup) : sendNotFound(res, 'Lessons group not found');
+    return lessonsGroup;
 });
 
-export const createLessonsGroup = asyncHandler(async (req, res) => {
+export const createLessonsGroup = handleAsync(async (req, res) => {
     const insertedLessonsGroup = await lessonsGroupsService.createLessonsGroup(req.body);
-    sendResponse(res.status(201), insertedLessonsGroup);
+    return insertedLessonsGroup;
 });
 
-export const updateLessonsGroup = asyncHandler(async (req, res) => {
+export const updateLessonsGroup = handleAsync(async (req, res) => {
     const updatedLessonsGroup = await lessonsGroupsService.updateLessonsGroup(req.params.id, req.body);
-    updatedLessonsGroup ? sendResponse(res, updatedLessonsGroup) : sendNotFound(res, 'Lessons group not found');
+    return updatedLessonsGroup;
 });
 
-export const deleteLessonsGroup = asyncHandler(async (req, res) => {
+export const deleteLessonsGroup = handleAsync(async (req, res) => {
     const numRows = await lessonsGroupsService.deleteLessonsGroup(req.params.id);
-    if (numRows > 0) {
-        res.status(204).end();
-    } else {
-        sendNotFound(res, 'Lessons group not found');
-    }
+    return numRows;
 });

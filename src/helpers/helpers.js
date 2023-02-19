@@ -1,19 +1,27 @@
-// helpers.js
-
-export const asyncHandler = (fn) => (req, res, next) => {
-    Promise.resolve(fn(req, res, next)).catch((error) => {
-        handleErrors(res, error);
+export const handleAsync = (fn) => (req, res, next) => {
+    Promise.resolve(fn(req, res, next)).then((data) => {
+        if (data) {
+            sendStatus(res, 200, data);
+        } else {
+            sendNotFound(res, 'Data not found');
+        }
+    }).catch((error) => {
+        if (error.status) {
+            sendStatus(res, error.status, { message: error.message });
+        } else {
+            handleErrors(res, error);
+        }
     });
 };
 
 export const handleErrors = (res, error) => {
-    res.status(500).json({ message: error.message });
+    sendStatus(res, 500, { message: error.message });
 };
 
 export const sendNotFound = (res, message) => {
-    res.status(404).json({ message: message });
+    sendStatus(res, 404, { message: message });
 };
 
-export const sendResponse = (res, data) => {
-    res.status(200).json(data);
+export const sendStatus = (res, status, data) => {
+    res.status(status).json(data);
 };
