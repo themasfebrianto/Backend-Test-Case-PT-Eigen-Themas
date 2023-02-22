@@ -159,3 +159,4 @@
 2023-02-22 19:46:30 [Logging] info: [GET] /api/groups
 2023-02-22 19:46:45 [Logging] info: [GET] /api/menu/javascript%20js
 2023-02-22 19:50:25 [Logging] info: [GET] /api/menu/javascript%20js
+2023-02-22 20:48:54 [Logging] info: [POST] /api/register
