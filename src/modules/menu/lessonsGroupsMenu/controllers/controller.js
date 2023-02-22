@@ -1,8 +1,8 @@
-import { handleAsync } from '../../../../helpers/helpers.js';
+import asyncHandler from 'express-async-handler';
 import lessonsGroupsMenu from '../services/services.js';
 
-export const getLessonsGroupsMenu = handleAsync(async (req, res) => {
+export const getLessonsGroupsMenu = asyncHandler(async (req, res) => {
     const { lessonsGroups } = req.params;
     const menuData = await lessonsGroupsMenu(lessonsGroups);
-    return res.json(menuData);
+    res.json(menuData);
 });
