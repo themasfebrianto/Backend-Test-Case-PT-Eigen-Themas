@@ -1,6 +1,7 @@
 import { sequelize, Sequelize } from '../../../../helpers/modelHelpers.js';
+import Lessons from '../../lessons/models/model.js';
 
-const Lessons = sequelize.define('LessonsContents', {
+const LessonsContents = sequelize.define('LessonsContents', {
     content: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -13,6 +14,14 @@ const Lessons = sequelize.define('LessonsContents', {
         type: Sequelize.STRING,
         allowNull: false,
     },
+    LessonId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: {
+            model: Lessons,
+            key: 'id'
+        }
+    }
 }, { schema: 'public' });
 
-export default Lessons;
+export default LessonsContents;

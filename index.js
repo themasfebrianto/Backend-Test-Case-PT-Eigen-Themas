@@ -1,29 +1,19 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import { Sequelize } from "sequelize";
 import route from "./src/routes.js";
+import { sequelize } from './src/helpers/modelHelpers.js';
+import { defineAssociations } from './src/config/relation.js';
 import { createLogger, format, transports } from "winston";
 const { combine, timestamp, label, printf } = format;
 
-dotenv.config();
+dotenv.config(); // import env config
 
-const app = express();
+await sequelize.sync(); //async model
 
-// Initialize Sequelize and test the connection
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
-    dialect: 'postgres',
-    logging: false
-});
+defineAssociations(); //define relation
 
-sequelize
-    .authenticate()
-    .then(() => {
-        console.log("Connected to PostgreSQL");
-    })
-    .catch((err) => {
-        console.error("Unable to connect to PostgreSQL:", err);
-    });
+const app = express(); // add express
 
 // Initialize logger
 const logFormat = printf(({ level, message, label, timestamp }) => {

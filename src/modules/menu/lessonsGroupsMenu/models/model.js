@@ -1,11 +1,7 @@
 import { sequelize, Sequelize } from '../../../../helpers/modelHelpers.js';
 
-const Course = sequelize.define('Courses', {
+const lessonsGroups = sequelize.define('lessonsGroups', {
     name: {
-        type: Sequelize.STRING,
-        allowNull: false,
-    },
-    code: {
         type: Sequelize.STRING,
         allowNull: false,
     },
@@ -13,6 +9,10 @@ const Course = sequelize.define('Courses', {
         type: Sequelize.STRING,
         allowNull: false,
     },
+    subMenu: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
 }, { schema: 'public' });
 
-export default Course;
+export default lessonsGroups;
