@@ -1,27 +1,27 @@
 import * as lessonsGroupsService from '../services/services.js';
-import { handleAsync } from '../../../../helpers/helpers.js';
+import asyncHandler from 'express-async-handler';
 
-export const getAllLessonsGroups = handleAsync(async (req, res) => {
+export const getAllLessonsGroups = asyncHandler(async (req, res) => {
     const lessonsGroups = await lessonsGroupsService.getAllLessonsGroups();
-    return lessonsGroups;
+    return res.json(lessonsGroups);
 });
 
-export const getLessonsGroupById = handleAsync(async (req, res) => {
+export const getLessonsGroupById = asyncHandler(async (req, res) => {
     const lessonsGroup = await lessonsGroupsService.getLessonsGroupById(req.params.id);
-    return lessonsGroup;
+    return res.json(lessonsGroup);
 });
 
-export const createLessonsGroup = handleAsync(async (req, res) => {
+export const createLessonsGroup = asyncHandler(async (req, res) => {
     const insertedLessonsGroup = await lessonsGroupsService.createLessonsGroup(req.body);
-    return insertedLessonsGroup;
+    return res.status(201).json(insertedLessonsGroup);
 });
 
-export const updateLessonsGroup = handleAsync(async (req, res) => {
+export const updateLessonsGroup = asyncHandler(async (req, res) => {
     const updatedLessonsGroup = await lessonsGroupsService.updateLessonsGroup(req.params.id, req.body);
-    return updatedLessonsGroup;
+    return res.json(updatedLessonsGroup);
 });
 
-export const deleteLessonsGroup = handleAsync(async (req, res) => {
+export const deleteLessonsGroup = asyncHandler(async (req, res) => {
     const numRows = await lessonsGroupsService.deleteLessonsGroup(req.params.id);
-    return numRows;
+    return res.json({ message: `${numRows} row(s) deleted.` });
 });

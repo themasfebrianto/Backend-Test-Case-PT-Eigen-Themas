@@ -1,32 +1,37 @@
-import LessonsGroups from '../models/model.js';
+import Courses from '../../../master/courses/models/model.js';
+import LessonsGroups from '../../../master/lessonsGroups/models/model.js';
+import Lessons from '../../../master/lessons/models/model.js';
+import LessonsContents from '../../../master/lessonsContents/models/model.js';
 
-export const getAllLessonsGroups = async () => {
-    const lessonsGroups = await LessonsGroups.findAll();
-    return lessonsGroups;
+const lessonsGroupsMenu = async (courseName) => {
+    try {
+        const course = await Courses.findOne({
+            where: { name: courseName },
+            include: [
+                {
+                    model: LessonsGroups,
+                    include: [
+                        {
+                            model: Lessons,
+                        },
+                    ],
+                },
+            ],
+        });
+
+        const menu = course.LessonsGroups.map((lessonGroup) => ({
+            name: lessonGroup.name,
+            icon: lessonGroup.icon, // assuming you have an 'icon' attribute on the LessonsGroups model
+            subMenu: lessonGroup.Lessons.map((lesson) => ({
+                name: lesson.name,
+            })),
+        }));
+
+        return menu;
+    } catch (error) {
+        // handle error
+        console.log(error);
+    }
 };
 
-export const getLessonsGroupById = async (id) => {
-    const lessonsGroup = await LessonsGroups.findByPk(id);
-    return lessonsGroup;
-};
-
-export const createLessonsGroup = async (data) => {
-    const newLessonsGroup = await LessonsGroups.create(data);
-    return newLessonsGroup;
-};
-
-export const updateLessonsGroup = async (id, data) => {
-    const [numRows, [updatedLessonsGroup]] = await LessonsGroups.update(
-        data,
-        {
-            returning: true,
-            where: { id },
-        }
-    );
-    return updatedLessonsGroup;
-};
-
-export const deleteLessonsGroup = async (id) => {
-    const numRows = await LessonsGroups.destroy({ where: { id } });
-    return numRows;
-};
+export default lessonsGroupsMenu;

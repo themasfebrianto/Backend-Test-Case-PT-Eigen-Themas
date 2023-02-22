@@ -1,27 +1,27 @@
 import * as lessonService from '../services/services.js';
-import { handleAsync } from '../../../../helpers/helpers.js';
+import asyncHandler from 'express-async-handler';
 
-export const getLessons = handleAsync(async (req, res) => {
+export const getLessons = asyncHandler(async (req, res) => {
     const lessons = await lessonService.getAllLessons();
-    return lessons;
+    res.json(lessons);
 });
 
-export const getLessonById = handleAsync(async (req, res) => {
+export const getLessonById = asyncHandler(async (req, res) => {
     const lesson = await lessonService.getLessonById(req.params.id);
-    return lesson;
+    res.json(lesson);
 });
 
-export const createLesson = handleAsync(async (req, res) => {
+export const createLesson = asyncHandler(async (req, res) => {
     const insertedLesson = await lessonService.createLesson(req.body);
-    return insertedLesson;
+    res.json(insertedLesson);
 });
 
-export const updateLesson = handleAsync(async (req, res) => {
+export const updateLesson = asyncHandler(async (req, res) => {
     const updatedLesson = await lessonService.updateLesson(req.params.id, req.body);
-    return updatedLesson;
+    res.json(updatedLesson);
 });
 
-export const deleteLesson = handleAsync(async (req, res) => {
+export const deleteLesson = asyncHandler(async (req, res) => {
     const deletedRows = await lessonService.deleteLesson(req.params.id);
-    return deletedRows;
+    res.json(deletedRows);
 });
