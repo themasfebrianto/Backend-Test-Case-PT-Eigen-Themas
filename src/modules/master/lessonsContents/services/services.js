@@ -10,14 +10,14 @@ export const getLessonContentById = async (id) => {
     return lessonContent;
 };
 
-export const createLessonContent = async (content, quiz, status) => {
-    const lessonContent = await Lessons.create({ content, quiz, status });
+export const createLessonContent = async (content, quiz, status, LessonId) => {
+    const lessonContent = await Lessons.create({ content, quiz, status, LessonId });
     return lessonContent;
 };
 
-export const updateLessonContent = async (id, content, quiz, status) => {
+export const updateLessonContent = async (id, content, quiz, status, LessonId) => {
     const [numRows, [updatedLessonContent]] = await Lessons.update(
-        { content, quiz, status },
+        { content, quiz, status, LessonId },
         {
             where: { id },
             returning: true,

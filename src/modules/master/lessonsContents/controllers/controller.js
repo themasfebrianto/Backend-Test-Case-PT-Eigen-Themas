@@ -12,14 +12,14 @@ export const getLessonContentById = asyncHandler(async (req, res) => {
 });
 
 export const createLessonContent = asyncHandler(async (req, res) => {
-    const { content, quiz, status } = req.body;
-    const insertedLessonContent = await lessonContentService.createLessonContent(content, quiz, status);
+    const { content, quiz, status, LessonId } = req.body;
+    const insertedLessonContent = await lessonContentService.createLessonContent(content, quiz, status, LessonId);
     res.status(201).json(insertedLessonContent);
 });
 
 export const updateLessonContent = asyncHandler(async (req, res) => {
-    const { content, quiz, status } = req.body;
-    const updatedLessonContent = await lessonContentService.updateLessonContent(req.params.id, content, quiz, status);
+    const { content, quiz, status, LessonId } = req.body;
+    const updatedLessonContent = await lessonContentService.updateLessonContent(req.params.id, content, quiz, status, LessonId);
     res.json(updatedLessonContent);
 });
 

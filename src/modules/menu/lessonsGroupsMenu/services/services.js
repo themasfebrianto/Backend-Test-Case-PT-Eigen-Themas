@@ -13,6 +13,12 @@ const lessonsGroupsMenu = async (courseName) => {
                     include: [
                         {
                             model: Lessons,
+                            include: [
+                                {
+                                    model: LessonsContents,
+                                    attributes: ['content', 'quiz', 'status'],
+                                },
+                            ],
                         },
                     ],
                 },
@@ -21,15 +27,15 @@ const lessonsGroupsMenu = async (courseName) => {
 
         const menu = course.LessonsGroups.map((lessonGroup) => ({
             name: lessonGroup.name,
-            icon: lessonGroup.icon, // assuming you have an 'icon' attribute on the LessonsGroups model
+            icon: lessonGroup.icon,
             subMenu: lessonGroup.Lessons.map((lesson) => ({
                 name: lesson.name,
+                contents: lesson.LessonsContents, // Add contents to the subMenu object
             })),
         }));
 
         return menu;
     } catch (error) {
-        // handle error
         console.log(error);
     }
 };

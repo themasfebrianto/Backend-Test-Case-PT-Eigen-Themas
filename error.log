@@ -1,0 +1,85 @@
+2023-02-23 16:50:30 [Logging] error: SequelizeValidationError: notNull Violation: LessonsContents.LessonId cannot be null
+    at InstanceValidator._validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:2368:7)
+    at async LessonsContents.create (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1344:12)
+    at async Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:27)
+    at async file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:35
+2023-02-23 16:50:57 [Logging] error: SequelizeValidationError: notNull Violation: LessonsContents.LessonId cannot be null
+    at InstanceValidator._validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:2368:7)
+    at async LessonsContents.create (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1344:12)
+    at async Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:27)
+    at async file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:35
+2023-02-23 16:53:13 [Logging] error: SequelizeValidationError: notNull Violation: LessonsContents.LessonId cannot be null
+    at InstanceValidator._validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:2368:7)
+    at async LessonsContents.create (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1344:12)
+    at async Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:27)
+    at async file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:35
+2023-02-23 16:53:52 [Logging] error: SequelizeValidationError: notNull Violation: LessonsContents.LessonId cannot be null
+    at InstanceValidator._validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:2368:7)
+    at async LessonsContents.create (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1344:12)
+    at async Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:27)
+    at async file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:35
+2023-02-23 16:54:39 [Logging] error: SequelizeValidationError: notNull Violation: LessonsContents.LessonId cannot be null
+    at InstanceValidator._validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:2368:7)
+    at async LessonsContents.create (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1344:12)
+    at async Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:27)
+    at async file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:35
+2023-02-23 16:55:02 [Logging] error: SequelizeValidationError: notNull Violation: LessonsContents.LessonId cannot be null
+    at InstanceValidator._validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:2368:7)
+    at async LessonsContents.create (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1344:12)
+    at async Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:27)
+    at async file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:35
+2023-02-23 16:55:19 [Logging] error: SequelizeValidationError: notNull Violation: LessonsContents.LessonId cannot be null
+    at InstanceValidator._validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\javascript\express_flutter\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:2368:7)
+    at async LessonsContents.create (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1344:12)
+    at async Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:27)
+    at async file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:35
+2023-02-23 16:55:59 [Logging] error: ReferenceError: LessonId is not defined
+    at Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:73)
+    at file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:62
+    at asyncUtilWrap (D:\javascript\express_flutter\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (D:\javascript\express_flutter\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\javascript\express_flutter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\javascript\express_flutter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\javascript\express_flutter\node_modules\express\lib\router\layer.js:95:5)
+    at D:\javascript\express_flutter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\javascript\express_flutter\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\javascript\express_flutter\node_modules\express\lib\router\index.js:280:10)
+2023-02-23 16:56:24 [Logging] error: ReferenceError: LessonId is not defined
+    at Module.createLessonContent (file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/services/services.js:14:73)
+    at file:///D:/javascript/express_flutter/src/modules/master/lessonsContents/controllers/controller.js:16:62
+    at asyncUtilWrap (D:\javascript\express_flutter\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (D:\javascript\express_flutter\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\javascript\express_flutter\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\javascript\express_flutter\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\javascript\express_flutter\node_modules\express\lib\router\layer.js:95:5)
+    at D:\javascript\express_flutter\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\javascript\express_flutter\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\javascript\express_flutter\node_modules\express\lib\router\index.js:280:10)
