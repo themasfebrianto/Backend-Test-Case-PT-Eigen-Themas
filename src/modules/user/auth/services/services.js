@@ -11,7 +11,6 @@ export const login = async (email, password) => {
 
     // Verify the user's password using Argon2
     const isPasswordValid = await argon2.verify(user.password, password);
-    console.log(isPasswordValid);
 
     if (!isPasswordValid) {
         throw new Error('Invalid password');
@@ -22,13 +21,11 @@ export const login = async (email, password) => {
 };
 
 export const register = async (userData) => {
-    console.log(userData.password);
     if (!userData.password) {
         throw new Error('Password is required');
     }
     // Hash the user's password before storing it in the database
     const hashedPassword = await argon2.hash(userData.password);
-    console.log(hashedPassword);
 
     // Create a new user with the provided data
     const user = await User.create({
