@@ -1,17 +1,20 @@
 import User from '../models/model.js';
-import bcrypt from 'bcrypt';
+import argon2 from 'argon2';
 
 export const login = async (email, password) => {
     // Find the user with the provided email
     const user = await User.findOne({ where: { email } });
+
     if (!user) {
-        throw new Error('Invalid email or password');
+        throw new Error('Invalid email');
     }
 
-    // Check if the provided password matches the stored password
-    const passwordMatch = await bcrypt.compare(password, user.password);
-    if (!passwordMatch) {
-        throw new Error('Invalid email or password');
+    // Verify the user's password using Argon2
+    const isPasswordValid = await argon2.verify(user.password, password);
+    console.log(isPasswordValid);
+
+    if (!isPasswordValid) {
+        throw new Error('Invalid password');
     }
 
     // If the email and password are correct, return the user
@@ -19,8 +22,13 @@ export const login = async (email, password) => {
 };
 
 export const register = async (userData) => {
+    console.log(userData.password);
+    if (!userData.password) {
+        throw new Error('Password is required');
+    }
     // Hash the user's password before storing it in the database
-    const hashedPassword = await bcrypt.hash(userData.password, 10);
+    const hashedPassword = await argon2.hash(userData.password);
+    console.log(hashedPassword);
 
     // Create a new user with the provided data
     const user = await User.create({
@@ -41,13 +49,13 @@ export const changePasswordUser = async (userId, oldPassword, newPassword) => {
     }
 
     // Check if the old password matches the stored password
-    const passwordMatch = await bcrypt.compare(oldPassword, user.password);
+    const passwordMatch = await argon2.verify(user.password, oldPassword);
     if (!passwordMatch) {
         throw new Error('Invalid password');
     }
 
     // Hash the new password and update the user's record in the database
-    const hashedPassword = await bcrypt.hash(newPassword, 10);
+    const hashedPassword = await argon2.hash(newPassword);
     user.password = hashedPassword;
     await user.save();
 
