@@ -1,5 +1,4 @@
 import { sequelize, Sequelize } from '../../../../helpers/modelHelpers.js';
-import bcrypt from 'bcrypt';
 
 const User = sequelize.define('User', {
     firstName: {
@@ -21,15 +20,5 @@ const User = sequelize.define('User', {
     },
 }, { schema: 'public' });
 
-// Hash password before saving user to database
-User.beforeCreate(async (user) => {
-    const saltRounds = 10;
-    user.password = await bcrypt.hash(user.password, saltRounds);
-});
-
-// Define method to compare entered password with hashed password
-User.prototype.isValidPassword = async function (password) {
-    return await bcrypt.compare(password, this.password);
-};
 
 export default User;

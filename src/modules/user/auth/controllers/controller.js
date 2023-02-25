@@ -1,5 +1,4 @@
-import dotenv from 'dotenv';
-dotenv.config();
+import dotenv from "dotenv";
 import jwt from 'jsonwebtoken';
 import asyncHandler from 'express-async-handler';
 import {
@@ -8,6 +7,7 @@ import {
     changePasswordUser,
     deletedUser
 } from '../services/services.js';
+dotenv.config();
 
 export const loginUser = asyncHandler(async (req, res) => {
     const { email, password } = req.body;
@@ -29,9 +29,10 @@ export const loginUser = asyncHandler(async (req, res) => {
 
 export const registerUser = asyncHandler(async (req, res) => {
     const { firstName, lastName, email, password } = req.body;
+
     try {
         // Call the register user service to create a new user
-        const user = await register(firstName, lastName, email, password);
+        const user = await register({ firstName, lastName, email, password });
 
         // Generate JWT token
         const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
@@ -45,11 +46,11 @@ export const registerUser = asyncHandler(async (req, res) => {
 });
 
 export const changePassword = asyncHandler(async (req, res) => {
-    const { email, oldPassword, newPassword } = req.body;
+    const { userId, oldPassword, newPassword } = req.body;
 
     try {
         // Call the change password service to update the user's password
-        await changePasswordUser(email, oldPassword, newPassword);
+        await changePasswordUser(userId, oldPassword, newPassword);
 
         return res.status(204).end();
     } catch (error) {
@@ -59,11 +60,11 @@ export const changePassword = asyncHandler(async (req, res) => {
 });
 
 export const deleteUser = asyncHandler(async (req, res) => {
-    const { email } = req.body;
+    const { userId } = req.body;
 
     try {
         // Call the delete user service to remove the user from the database
-        await deletedUser(email);
+        await deletedUser(userId);
 
         return res.status(204).end();
     } catch (error) {
