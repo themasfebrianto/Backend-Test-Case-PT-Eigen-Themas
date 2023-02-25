@@ -12,13 +12,7 @@ const lessonsGroupsMenu = async (courseName) => {
                     model: LessonsGroups,
                     include: [
                         {
-                            model: Lessons,
-                            include: [
-                                {
-                                    model: LessonsContents,
-                                    attributes: ['content', 'quiz', 'status'],
-                                },
-                            ],
+                            model: Lessons
                         },
                     ],
                 },
@@ -29,8 +23,8 @@ const lessonsGroupsMenu = async (courseName) => {
             name: lessonGroup.name,
             icon: lessonGroup.icon,
             subMenu: lessonGroup.Lessons.map((lesson) => ({
-                name: lesson.name,
-                contents: lesson.LessonsContents, // Add contents to the subMenu object
+                id: lesson.id, // Add contents to the subMenu object
+                name: lesson.name, // Add contents to the subMenu object
             })),
         }));
 

@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import jwt from 'jsonwebtoken';
 import asyncHandler from 'express-async-handler';
 import {
@@ -27,7 +29,6 @@ export const loginUser = asyncHandler(async (req, res) => {
 
 export const registerUser = asyncHandler(async (req, res) => {
     const { firstName, lastName, email, password } = req.body;
-    register
     try {
         // Call the register user service to create a new user
         const user = await register(firstName, lastName, email, password);

@@ -60,7 +60,7 @@ app.use((err, req, res, next) => {
     res.status(500).send("Something went wrong.");
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 // Wrap the app.listen() call with asyncHandler
 app.listen(port, asyncHandler(() => {

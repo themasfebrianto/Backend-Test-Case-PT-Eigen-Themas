@@ -19,8 +19,13 @@ export const login = async (email, password) => {
 };
 
 export const register = async (userData) => {
+    // Log password and saltRounds values for debugging
+    console.log('password:', userData.password);
+    const saltRounds = 10;
+    console.log('saltRounds:', saltRounds);
+
     // Hash the user's password before storing it in the database
-    const hashedPassword = await bcrypt.hash(userData.password, 10);
+    const hashedPassword = await bcrypt.hash(userData.password, saltRounds);
 
     // Create a new user with the provided data
     const user = await User.create({
