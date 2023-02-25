@@ -20,11 +20,13 @@ const lessonsGroupsMenu = async (courseName) => {
         });
 
         const menu = course.LessonsGroups.map((lessonGroup) => ({
+            id: lessonGroup.id,
             name: lessonGroup.name,
-            icon: lessonGroup.icon,
+            status: lessonGroup.status,
             subMenu: lessonGroup.Lessons.map((lesson) => ({
-                id: lesson.id, // Add contents to the subMenu object
-                name: lesson.name, // Add contents to the subMenu object
+                id: lesson.id,
+                name: lesson.name,
+                status: lesson.status,
             })),
         }));
 
