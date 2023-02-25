@@ -95,3 +95,11 @@ notNull Violation: Lessons.LessonsGroupId cannot be null
     at async Lessons.create (D:\express js\Backend-Express-Postgre\node_modules\sequelize\lib\model.js:1344:12)
     at async Module.createLesson (file:///D:/express%20js/Backend-Express-Postgre/src/modules/master/lessons/services/services.js:12:12)
     at async file:///D:/express%20js/Backend-Express-Postgre/src/modules/master/lessons/controllers/controller.js:15:28
+2023-02-25 12:28:21 [Logging] error: Error
+    at Query.run (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\express_flutter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.bulkDelete (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:403:12)
+    at async Courses.destroy (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1798:16)
+    at async Module.deleteCourse (file:///D:/javascript/express_flutter/src/modules/master/courses/services/services.js:27:21)
+    at async file:///D:/javascript/express_flutter/src/modules/master/courses/controllers/controller.js:25:21
