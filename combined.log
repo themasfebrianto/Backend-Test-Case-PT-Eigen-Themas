@@ -1368,3 +1368,30 @@ notNull Violation: Member.name cannot be null
     at D:\javascript\BackendTest\node_modules\express\lib\router\index.js:284:15
     at Function.process_params (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:346:12)
     at next (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:280:10)
+2023-03-03 22:44:57 [Logging] info: [POST] /api/borrow/return
+2023-03-03 22:48:30 [Logging] info: [GET] /api/member
+2023-03-03 22:48:35 [Logging] info: [POST] /api/borrow/return
+2023-03-03 22:48:37 [Logging] info: [GET] /api/member
+2023-03-03 22:48:42 [Logging] info: [GET] /api/book
+2023-03-03 22:50:59 [Logging] info: [POST] /api/borrow
+2023-03-03 22:51:01 [Logging] info: [GET] /api/member
+2023-03-03 22:51:26 [Logging] info: [POST] /api/borrow/return
+2023-03-03 22:51:30 [Logging] info: [GET] /api/member
+2023-03-03 22:51:33 [Logging] info: [GET] /api/book
+2023-03-03 22:51:56 [Logging] info: [GET] /api/member
+2023-03-03 22:52:23 [Logging] info: [POST] /api/borrow
+2023-03-03 22:52:33 [Logging] info: [GET] /api/book
+2023-03-03 22:52:36 [Logging] info: [GET] /api/member
+2023-03-03 22:52:47 [Logging] info: [GET] /api/member
+2023-03-03 22:53:26 [Logging] info: [POST] /api/book
+2023-03-03 22:53:29 [Logging] info: [POST] /api/member
+2023-03-03 22:53:31 [Logging] info: [POST] /api/borrow
+2023-03-03 22:53:41 [Logging] info: [GET] /api/book
+2023-03-03 22:53:44 [Logging] info: [GET] /api/member
+2023-03-03 22:54:21 [Logging] info: [GET] /api/book
+2023-03-03 22:54:24 [Logging] info: [POST] /api/borrow/return
+2023-03-03 22:54:26 [Logging] info: [GET] /api/book
+2023-03-03 22:54:29 [Logging] info: [GET] /api/member
+2023-03-03 22:55:19 [Logging] info: [GET] /api/member
+2023-03-03 22:58:08 [Logging] info: [GET] /api/member
+2023-03-03 22:58:26 [Logging] info: [GET] /api/member
