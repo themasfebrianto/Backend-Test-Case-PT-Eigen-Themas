@@ -353,3 +353,25 @@ notNull Violation: Member.name cannot be null
     at D:\javascript\BackendTest\node_modules\express\lib\router\index.js:284:15
     at Function.process_params (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:346:12)
     at next (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:280:10)
+2023-03-03 16:48:53 [Logging] error: TypeError: this.build(...).save is not a function
+    at Members.create (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1350:8)
+    at Module.createMember (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:30:26)
+    at file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:15:48
+    at asyncUtilWrap (D:\javascript\BackendTest\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (D:\javascript\BackendTest\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\javascript\BackendTest\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\javascript\BackendTest\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\javascript\BackendTest\node_modules\express\lib\router\layer.js:95:5)
+    at D:\javascript\BackendTest\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:346:12)
+2023-03-03 16:49:10 [Logging] error: TypeError: this.build(...).save is not a function
+    at Books.create (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1350:8)
+    at Module.createBook (file:///D:/javascript/BackendTest/src/modules/master/book/services/services.js:14:30)
+    at file:///D:/javascript/BackendTest/src/modules/master/book/controllers/controller.js:15:44
+    at asyncUtilWrap (D:\javascript\BackendTest\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (D:\javascript\BackendTest\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\javascript\BackendTest\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\javascript\BackendTest\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\javascript\BackendTest\node_modules\express\lib\router\layer.js:95:5)
+    at D:\javascript\BackendTest\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:346:12)
