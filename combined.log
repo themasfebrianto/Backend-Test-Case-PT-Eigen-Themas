@@ -523,3 +523,620 @@
 2023-02-25 13:14:42 [Logging] info: [GET] /api/lessonsContents/4
 2023-02-25 13:14:45 [Logging] info: [GET] /api/lessonsContents/2
 2023-02-25 13:14:47 [Logging] info: [GET] /api/lessonsContents/3
+2023-02-25 15:39:37 [Logging] info: [GET] /api/courses
+2023-02-25 15:39:43 [Logging] info: [GET] /api/menu/javascript%20js
+2023-02-25 15:39:46 [Logging] info: [GET] /api/lessonsContents/3
+2023-02-25 15:48:04 [Logging] info: [GET] /api/courses
+2023-02-25 15:48:08 [Logging] info: [GET] /api/courses
+2023-02-25 15:48:19 [Logging] info: [GET] /api/courses
+2023-02-25 15:48:47 [Logging] info: [GET] /api/courses
+2023-02-25 15:49:02 [Logging] info: [GET] /api/courses
+2023-02-25 15:49:44 [Logging] info: [GET] /api/courses
+2023-02-25 15:50:36 [Logging] info: [GET] /api/courses
+2023-02-25 15:50:50 [Logging] info: [GET] /api/courses
+2023-02-25 15:50:53 [Logging] info: [GET] /api/courses
+2023-02-25 15:51:54 [Logging] info: [GET] /api/courses
+2023-02-25 15:52:02 [Logging] info: [GET] /api/courses
+2023-02-25 15:55:37 [Logging] info: [GET] /api/courses
+2023-02-25 15:55:41 [Logging] info: [GET] /api/courses
+2023-02-25 15:56:23 [Logging] info: [GET] /api/courses
+2023-02-25 15:56:30 [Logging] info: [GET] /api/courses
+2023-02-25 15:57:00 [Logging] info: [GET] /api/courses
+2023-02-25 15:57:24 [Logging] info: [GET] /api/courses
+2023-02-25 15:58:59 [Logging] info: [GET] /api/courses
+2023-02-25 15:59:15 [Logging] info: [GET] /api/courses
+2023-02-25 16:00:24 [Logging] info: [GET] /api/courses
+2023-02-25 16:00:26 [Logging] info: [GET] /api/courses
+2023-02-25 16:01:00 [Logging] info: [GET] /api/courses
+2023-02-25 16:01:18 [Logging] info: [GET] /api/courses
+2023-02-25 16:01:22 [Logging] info: [GET] /api/courses
+2023-02-25 16:04:03 [Logging] info: [GET] /api/courses
+2023-02-25 16:04:07 [Logging] info: [GET] /api/courses
+2023-02-25 16:04:11 [Logging] info: [GET] /api/courses
+2023-02-25 16:17:41 [Logging] info: [GET] /api/courses
+2023-02-25 16:17:41 [Logging] info: [GET] /api/courses
+2023-02-25 16:17:50 [Logging] info: [GET] /api/courses
+2023-02-25 16:17:50 [Logging] info: [GET] /api/courses
+2023-02-25 16:17:51 [Logging] info: [DELETE] /api/courses/9
+2023-02-25 16:17:54 [Logging] info: [GET] /api/courses
+2023-02-25 16:17:54 [Logging] info: [GET] /api/courses
+2023-02-25 16:18:08 [Logging] info: [GET] /api/courses
+2023-02-25 16:18:08 [Logging] info: [GET] /api/courses
+2023-02-25 16:19:01 [Logging] info: [GET] /api/courses
+2023-02-25 16:19:01 [Logging] info: [GET] /api/courses
+2023-02-25 16:19:10 [Logging] info: [GET] /api/courses
+2023-02-25 16:19:10 [Logging] info: [GET] /api/courses
+2023-03-01 14:54:33 [Logging] info: [GET] /api/courses
+2023-03-01 15:05:19 [Logging] info: [GET] /api/courses/
+2023-03-01 15:05:19 [Logging] info: [GET] /api/courses/
+2023-03-01 15:05:42 [Logging] info: [GET] /api/courses/
+2023-03-01 15:05:42 [Logging] info: [GET] /api/courses/
+2023-03-01 15:05:54 [Logging] info: [GET] /api/courses/
+2023-03-01 15:05:54 [Logging] info: [GET] /api/courses/
+2023-03-01 15:29:43 [Logging] info: [GET] /api/courses/
+2023-03-01 15:29:43 [Logging] info: [GET] /api/courses/
+2023-03-01 15:29:51 [Logging] info: [GET] /api/courses/
+2023-03-01 15:29:51 [Logging] info: [GET] /api/courses/
+2023-03-01 15:29:55 [Logging] info: [GET] /api/courses/
+2023-03-01 15:29:55 [Logging] info: [GET] /api/courses/
+2023-03-01 15:32:52 [Logging] info: [GET] /api/courses/
+2023-03-01 15:32:52 [Logging] info: [GET] /api/courses/
+2023-03-01 15:34:21 [Logging] info: [GET] /api/courses/
+2023-03-01 15:34:21 [Logging] info: [GET] /api/courses/
+2023-03-01 15:34:25 [Logging] info: [GET] /api/courses/
+2023-03-01 15:34:25 [Logging] info: [GET] /api/courses/
+2023-03-01 15:37:57 [Logging] info: [GET] /api/courses/
+2023-03-01 15:37:57 [Logging] info: [GET] /api/courses/
+2023-03-01 15:38:32 [Logging] info: [GET] /api/courses/
+2023-03-01 15:42:38 [Logging] info: [GET] /api/courses/
+2023-03-01 15:45:30 [Logging] info: [GET] /api/courses/
+2023-03-01 15:45:31 [Logging] info: [GET] /api/courses/
+2023-03-01 15:45:31 [Logging] info: [GET] /api/courses/
+2023-03-01 15:45:37 [Logging] info: [GET] /api/courses/
+2023-03-01 15:45:37 [Logging] info: [GET] /api/courses/
+2023-03-01 15:47:05 [Logging] info: [GET] /api/courses/
+2023-03-01 15:47:05 [Logging] info: [GET] /api/courses/
+2023-03-01 15:47:06 [Logging] info: [GET] /api/courses/
+2023-03-01 15:47:06 [Logging] info: [GET] /api/courses/
+2023-03-01 15:47:09 [Logging] info: [GET] /api/courses/
+2023-03-01 15:47:09 [Logging] info: [GET] /api/courses/
+2023-03-01 15:47:19 [Logging] info: [GET] /api/courses/
+2023-03-01 15:49:56 [Logging] info: [GET] /api/courses/
+2023-03-01 15:49:57 [Logging] info: [GET] /api/courses/
+2023-03-01 15:50:01 [Logging] info: [GET] /api/courses/
+2023-03-01 15:50:01 [Logging] info: [GET] /api/courses/
+2023-03-01 15:50:38 [Logging] info: [GET] /api/courses/
+2023-03-01 15:50:38 [Logging] info: [GET] /api/courses/
+2023-03-01 15:52:10 [Logging] info: [GET] /api/courses/
+2023-03-01 15:52:13 [Logging] info: [GET] /api/courses/
+2023-03-01 15:52:13 [Logging] info: [GET] /api/courses/
+2023-03-01 15:52:20 [Logging] info: [GET] /api/courses/
+2023-03-01 15:52:20 [Logging] info: [GET] /api/courses/
+2023-03-01 15:53:55 [Logging] info: [GET] /api/courses/
+2023-03-01 15:53:55 [Logging] info: [GET] /api/courses/
+2023-03-01 15:54:00 [Logging] info: [GET] /api/courses/
+2023-03-01 15:54:00 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:03 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:11 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:12 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:12 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:14 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:14 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:15 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:15 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:15 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:16 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:17 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:17 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:30 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:36 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:36 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:37 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:38 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:38 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:39 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:39 [Logging] info: [GET] /api/courses/
+2023-03-01 15:55:51 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:01 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:02 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:02 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:03 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:03 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:14 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:15 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:15 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:17 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:17 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:18 [Logging] info: [GET] /api/courses/
+2023-03-01 15:56:18 [Logging] info: [GET] /api/courses/
+2023-03-01 15:58:12 [Logging] info: [GET] /api/courses/
+2023-03-01 15:58:15 [Logging] info: [GET] /api/courses/
+2023-03-01 15:58:15 [Logging] info: [GET] /api/courses/
+2023-03-01 15:58:25 [Logging] info: [GET] /api/courses/
+2023-03-01 15:58:47 [Logging] info: [GET] /api/courses/
+2023-03-01 16:01:34 [Logging] info: [GET] /api/courses/
+2023-03-01 16:01:35 [Logging] info: [GET] /api/courses/
+2023-03-01 16:01:35 [Logging] info: [GET] /api/courses/
+2023-03-01 16:01:36 [Logging] info: [GET] /api/courses/
+2023-03-01 16:01:37 [Logging] info: [GET] /api/courses/
+2023-03-01 16:01:42 [Logging] info: [GET] /api/courses/
+2023-03-01 16:01:42 [Logging] info: [GET] /api/courses/
+2023-03-01 16:02:18 [Logging] info: [GET] /api/courses/
+2023-03-01 16:02:18 [Logging] info: [GET] /api/courses/
+2023-03-01 16:02:39 [Logging] info: [GET] /api/courses/
+2023-03-01 16:02:40 [Logging] info: [GET] /api/courses/
+2023-03-01 16:02:40 [Logging] info: [GET] /api/courses/
+2023-03-01 16:04:20 [Logging] info: [GET] /api/courses/
+2023-03-01 16:06:03 [Logging] info: [GET] /api/courses/
+2023-03-01 16:06:06 [Logging] info: [GET] /api/courses/
+2023-03-01 16:06:09 [Logging] info: [GET] /api/courses/
+2023-03-01 16:06:09 [Logging] info: [GET] /api/courses/
+2023-03-01 16:06:39 [Logging] info: [GET] /api/courses/
+2023-03-01 16:06:39 [Logging] info: [GET] /api/courses/
+2023-03-01 16:06:41 [Logging] info: [GET] /api/courses/
+2023-03-01 16:06:41 [Logging] info: [GET] /api/courses/
+2023-03-01 16:07:23 [Logging] info: [GET] /api/courses/
+2023-03-01 16:07:51 [Logging] info: [GET] /api/courses/
+2023-03-01 16:08:09 [Logging] info: [GET] /api/courses/
+2023-03-01 16:08:30 [Logging] info: [GET] /api/courses/
+2023-03-01 16:08:30 [Logging] info: [GET] /api/courses/
+2023-03-01 16:08:49 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:00 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:06 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:10 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:31 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:32 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:32 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:41 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:51 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:51 [Logging] info: [GET] /api/courses/
+2023-03-01 16:09:55 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:01 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:03 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:03 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:17 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:17 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:29 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:32 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:32 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:44 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:49 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:49 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:50 [Logging] info: [GET] /api/courses/
+2023-03-01 16:10:57 [Logging] info: [GET] /api/courses/
+2023-03-01 16:11:00 [Logging] info: [GET] /api/courses/
+2023-03-01 16:11:10 [Logging] info: [GET] /api/courses/
+2023-03-01 16:11:21 [Logging] info: [GET] /api/courses/
+2023-03-01 16:11:26 [Logging] info: [GET] /api/courses/
+2023-03-01 16:11:40 [Logging] info: [GET] /api/courses/
+2023-03-01 16:11:42 [Logging] info: [GET] /api/courses/
+2023-03-01 16:11:42 [Logging] info: [GET] /api/courses/
+2023-03-01 16:11:59 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:01 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:01 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:16 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:25 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:32 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:34 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:34 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:36 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:36 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:38 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:38 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:54 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:56 [Logging] info: [GET] /api/courses/
+2023-03-01 16:12:56 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:04 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:06 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:06 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:10 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:11 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:11 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:19 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:20 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:20 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:26 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:28 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:28 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:47 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:49 [Logging] info: [GET] /api/courses/
+2023-03-01 16:13:49 [Logging] info: [GET] /api/courses/
+2023-03-01 16:14:01 [Logging] info: [GET] /api/courses/
+2023-03-01 16:14:24 [Logging] info: [GET] /api/courses/
+2023-03-01 16:14:33 [Logging] info: [GET] /api/courses/
+2023-03-01 16:15:17 [Logging] info: [GET] /api/courses/
+2023-03-01 16:15:26 [Logging] info: [GET] /api/courses/
+2023-03-01 16:15:26 [Logging] info: [GET] /api/courses/
+2023-03-01 16:15:26 [Logging] info: [GET] /api/courses/
+2023-03-01 16:15:37 [Logging] info: [GET] /api/courses/
+2023-03-01 16:15:46 [Logging] info: [GET] /api/courses/
+2023-03-01 16:17:00 [Logging] info: [GET] /api/courses/
+2023-03-01 16:17:54 [Logging] info: [GET] /api/courses/
+2023-03-01 16:17:58 [Logging] info: [GET] /api/courses/
+2023-03-01 16:23:57 [Logging] info: [GET] /api/courses/
+2023-03-01 16:23:58 [Logging] info: [GET] /api/courses/
+2023-03-01 16:24:16 [Logging] info: [GET] /api/courses/
+2023-03-01 16:24:16 [Logging] info: [GET] /api/courses/
+2023-03-01 16:24:16 [Logging] info: [GET] /api/courses/
+2023-03-01 16:26:44 [Logging] info: [GET] /api/courses/
+2023-03-01 16:26:45 [Logging] info: [GET] /api/courses/
+2023-03-01 16:26:45 [Logging] info: [GET] /api/courses/
+2023-03-01 16:26:54 [Logging] info: [GET] /api/courses/
+2023-03-01 16:26:56 [Logging] info: [GET] /api/courses/
+2023-03-01 16:26:56 [Logging] info: [GET] /api/courses/
+2023-03-01 16:27:11 [Logging] info: [GET] /api/courses/
+2023-03-01 16:27:17 [Logging] info: [GET] /api/courses/
+2023-03-01 16:27:18 [Logging] info: [GET] /api/courses/
+2023-03-01 16:27:18 [Logging] info: [GET] /api/courses/
+2023-03-01 16:27:21 [Logging] info: [GET] /api/courses/
+2023-03-01 16:27:25 [Logging] info: [GET] /api/courses/
+2023-03-01 16:28:00 [Logging] info: [GET] /api/courses/
+2023-03-01 16:28:07 [Logging] info: [GET] /api/courses/
+2023-03-01 16:28:07 [Logging] info: [GET] /api/courses/
+2023-03-01 16:28:40 [Logging] info: [GET] /api/courses/
+2023-03-01 16:28:46 [Logging] info: [GET] /api/courses/
+2023-03-01 16:28:47 [Logging] info: [GET] /api/courses/
+2023-03-01 16:28:48 [Logging] info: [GET] /api/courses/
+2023-03-01 16:29:00 [Logging] info: [GET] /api/courses/
+2023-03-01 16:29:26 [Logging] info: [GET] /api/courses/
+2023-03-01 16:29:26 [Logging] info: [GET] /api/courses/
+2023-03-01 16:30:20 [Logging] info: [GET] /api/courses/
+2023-03-01 16:30:33 [Logging] info: [GET] /api/courses/
+2023-03-01 16:30:36 [Logging] info: [GET] /api/courses/
+2023-03-01 16:30:36 [Logging] info: [GET] /api/courses/
+2023-03-01 16:30:40 [Logging] info: [GET] /api/courses/
+2023-03-01 16:30:49 [Logging] info: [GET] /api/courses/
+2023-03-01 16:30:59 [Logging] info: [GET] /api/courses/
+2023-03-01 16:31:21 [Logging] info: [GET] /api/courses/
+2023-03-01 16:34:27 [Logging] info: [GET] /api/courses/
+2023-03-01 16:34:27 [Logging] info: [GET] /api/courses/
+2023-03-01 16:49:49 [Logging] info: [GET] /api/courses/
+2023-03-01 16:49:49 [Logging] info: [GET] /api/courses/
+2023-03-01 16:51:15 [Logging] info: [GET] /api/courses/
+2023-03-01 16:51:16 [Logging] info: [GET] /api/courses/
+2023-03-03 08:55:56 [Logging] info: [GET] /users
+2023-03-03 08:55:56 [Logging] info: [GET] /users
+2023-03-03 08:57:58 [Logging] info: [GET] /api/courses
+2023-03-03 08:58:04 [Logging] info: [GET] /api/courses
+2023-03-03 08:58:56 [Logging] info: [GET] /api/courses
+2023-03-03 09:01:10 [Logging] info: [OPTIONS] /api/courses
+2023-03-03 09:01:10 [Logging] info: [POST] /api/courses
+2023-03-03 09:01:10 [Logging] info: [GET] /api/courses
+2023-03-03 09:01:10 [Logging] info: [GET] /api/courses
+2023-03-03 09:01:12 [Logging] info: [OPTIONS] /api/courses/23
+2023-03-03 09:01:12 [Logging] info: [DELETE] /api/courses/23
+2023-03-03 09:01:12 [Logging] info: [GET] /api/courses
+2023-03-03 09:02:41 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:02:41 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:02:45 [Logging] info: [GET] /api/courses
+2023-03-03 09:02:45 [Logging] info: [GET] /api/courses
+2023-03-03 09:03:18 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:03:18 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:03:21 [Logging] info: [GET] /api/courses
+2023-03-03 09:03:21 [Logging] info: [GET] /api/courses
+2023-03-03 09:04:04 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:04:04 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:04:23 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:04:26 [Logging] info: [GET] /api/courses/undefined
+2023-03-03 09:04:26 [Logging] error: Error
+    at Query.run (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\express_flutter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Courses.findAll (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1134:21)
+    at async Courses.findOne (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1228:12)
+    at async Courses.findByPk (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1215:12)
+    at async Module.getCourseById (file:///D:/javascript/express_flutter/src/modules/master/courses/services/services.js:9:20)
+    at async file:///D:/javascript/express_flutter/src/modules/master/courses/controllers/controller.js:10:20
+2023-03-03 09:04:26 [Logging] info: [GET] /api/courses/undefined
+2023-03-03 09:04:26 [Logging] error: Error
+    at Query.run (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\express_flutter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Courses.findAll (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1134:21)
+    at async Courses.findOne (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1228:12)
+    at async Courses.findByPk (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1215:12)
+    at async Module.getCourseById (file:///D:/javascript/express_flutter/src/modules/master/courses/services/services.js:9:20)
+    at async file:///D:/javascript/express_flutter/src/modules/master/courses/controllers/controller.js:10:20
+2023-03-03 09:04:30 [Logging] info: [GET] /api/courses
+2023-03-03 09:04:30 [Logging] info: [GET] /api/courses
+2023-03-03 09:04:36 [Logging] info: [GET] /api/courses
+2023-03-03 09:04:36 [Logging] info: [GET] /api/courses
+2023-03-03 09:04:37 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:04:37 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:04:40 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:04:40 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:04:42 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:04:45 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:04:45 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:04:46 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:04:57 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:04:57 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:06:14 [Logging] info: [GET] /api/courses/undefined
+2023-03-03 09:06:14 [Logging] error: Error
+    at Query.run (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\express_flutter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Courses.findAll (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1134:21)
+    at async Courses.findOne (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1228:12)
+    at async Courses.findByPk (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1215:12)
+    at async Module.getCourseById (file:///D:/javascript/express_flutter/src/modules/master/courses/services/services.js:9:20)
+    at async file:///D:/javascript/express_flutter/src/modules/master/courses/controllers/controller.js:10:20
+2023-03-03 09:06:14 [Logging] info: [GET] /api/courses/undefined
+2023-03-03 09:06:14 [Logging] error: Error
+    at Query.run (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\express_flutter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Courses.findAll (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1134:21)
+    at async Courses.findOne (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1228:12)
+    at async Courses.findByPk (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1215:12)
+    at async Module.getCourseById (file:///D:/javascript/express_flutter/src/modules/master/courses/services/services.js:9:20)
+    at async file:///D:/javascript/express_flutter/src/modules/master/courses/controllers/controller.js:10:20
+2023-03-03 09:06:18 [Logging] info: [GET] /api/courses/undefined
+2023-03-03 09:06:18 [Logging] error: Error
+    at Query.run (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\express_flutter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Courses.findAll (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1134:21)
+    at async Courses.findOne (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1228:12)
+    at async Courses.findByPk (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1215:12)
+    at async Module.getCourseById (file:///D:/javascript/express_flutter/src/modules/master/courses/services/services.js:9:20)
+    at async file:///D:/javascript/express_flutter/src/modules/master/courses/controllers/controller.js:10:20
+2023-03-03 09:06:18 [Logging] info: [GET] /api/courses/undefined
+2023-03-03 09:06:18 [Logging] error: Error
+    at Query.run (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\express_flutter\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\express_flutter\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Courses.findAll (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1134:21)
+    at async Courses.findOne (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1228:12)
+    at async Courses.findByPk (D:\javascript\express_flutter\node_modules\sequelize\lib\model.js:1215:12)
+    at async Module.getCourseById (file:///D:/javascript/express_flutter/src/modules/master/courses/services/services.js:9:20)
+    at async file:///D:/javascript/express_flutter/src/modules/master/courses/controllers/controller.js:10:20
+2023-03-03 09:06:21 [Logging] info: [GET] /api/courses
+2023-03-03 09:06:21 [Logging] info: [GET] /api/courses
+2023-03-03 09:06:23 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:06:23 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:06:43 [Logging] info: [GET] /api/courses
+2023-03-03 09:06:44 [Logging] info: [GET] /api/courses
+2023-03-03 09:06:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:06:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:06:59 [Logging] info: [GET] /api/courses
+2023-03-03 09:07:03 [Logging] info: [GET] /api/courses
+2023-03-03 09:07:03 [Logging] info: [GET] /api/courses
+2023-03-03 09:07:05 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:07:05 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:07:10 [Logging] info: [OPTIONS] /api/courses/2
+2023-03-03 09:07:10 [Logging] info: [PATCH] /api/courses/2
+2023-03-03 09:09:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:09:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:09:55 [Logging] info: [GET] /api/courses/8
+2023-03-03 09:09:55 [Logging] info: [GET] /api/courses/8
+2023-03-03 09:09:59 [Logging] info: [GET] /api/courses
+2023-03-03 09:09:59 [Logging] info: [GET] /api/courses
+2023-03-03 09:10:01 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:10:01 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:10:04 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:10:04 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:11:07 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:11:07 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:11:12 [Logging] info: [GET] /api/courses
+2023-03-03 09:11:13 [Logging] info: [GET] /api/courses
+2023-03-03 09:11:46 [Logging] info: [OPTIONS] /api/courses
+2023-03-03 09:11:46 [Logging] info: [POST] /api/courses
+2023-03-03 09:11:47 [Logging] info: [GET] /api/courses
+2023-03-03 09:11:47 [Logging] info: [GET] /api/courses
+2023-03-03 09:11:49 [Logging] info: [OPTIONS] /api/courses/24
+2023-03-03 09:11:49 [Logging] info: [DELETE] /api/courses/24
+2023-03-03 09:11:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:14:55 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:14:55 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:14:57 [Logging] info: [OPTIONS] /api/courses/2
+2023-03-03 09:14:57 [Logging] info: [PATCH] /api/courses/2
+2023-03-03 09:15:15 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:15:16 [Logging] info: [OPTIONS] /api/courses/2
+2023-03-03 09:15:16 [Logging] info: [PATCH] /api/courses/2
+2023-03-03 09:16:03 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:16:06 [Logging] info: [OPTIONS] /api/courses/2
+2023-03-03 09:16:06 [Logging] info: [PATCH] /api/courses/2
+2023-03-03 09:16:45 [Logging] info: [GET] /api/courses
+2023-03-03 09:16:45 [Logging] info: [GET] /api/courses
+2023-03-03 09:16:47 [Logging] info: [GET] /api/courses/5
+2023-03-03 09:16:47 [Logging] info: [GET] /api/courses/5
+2023-03-03 09:16:48 [Logging] info: [GET] /api/courses
+2023-03-03 09:16:48 [Logging] info: [GET] /api/courses
+2023-03-03 09:17:05 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:17:05 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:17:06 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:17:06 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:17:09 [Logging] info: [PATCH] /api/courses/3
+2023-03-03 09:18:23 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:18:26 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:18:26 [Logging] info: [PUT] /api/courses/3
+2023-03-03 09:18:26 [Logging] info: [GET] /api/courses
+2023-03-03 09:18:26 [Logging] info: [GET] /api/courses
+2023-03-03 09:18:29 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:18:29 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:18:32 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:18:32 [Logging] info: [PUT] /api/courses/3
+2023-03-03 09:18:32 [Logging] info: [GET] /api/courses
+2023-03-03 09:18:32 [Logging] info: [GET] /api/courses
+2023-03-03 09:19:00 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:19:00 [Logging] info: [GET] /api/courses/3
+2023-03-03 09:19:02 [Logging] info: [OPTIONS] /api/courses/3
+2023-03-03 09:19:02 [Logging] info: [PUT] /api/courses/3
+2023-03-03 09:19:02 [Logging] info: [GET] /api/courses
+2023-03-03 09:19:02 [Logging] info: [GET] /api/courses
+2023-03-03 09:25:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:25:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:25:56 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:25:56 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:25:58 [Logging] info: [GET] /api/courses
+2023-03-03 09:25:58 [Logging] info: [GET] /api/courses
+2023-03-03 09:27:34 [Logging] info: [GET] /api/courses
+2023-03-03 09:27:34 [Logging] info: [GET] /api/courses
+2023-03-03 09:28:29 [Logging] info: [GET] /api/courses
+2023-03-03 09:28:30 [Logging] info: [GET] /api/courses
+2023-03-03 09:29:44 [Logging] info: [GET] /api/courses
+2023-03-03 09:29:44 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:03 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:04 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:22 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:22 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:43 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:46 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:46 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:51 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:30:51 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:30:53 [Logging] info: [GET] /api/courses
+2023-03-03 09:30:53 [Logging] info: [GET] /api/courses
+2023-03-03 09:31:14 [Logging] info: [GET] /api/courses
+2023-03-03 09:31:14 [Logging] info: [GET] /api/courses
+2023-03-03 09:31:17 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:31:17 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:32:37 [Logging] info: [GET] /api/courses
+2023-03-03 09:32:37 [Logging] info: [GET] /api/courses
+2023-03-03 09:33:08 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:33:08 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:33:14 [Logging] info: [GET] /api/courses
+2023-03-03 09:33:14 [Logging] info: [GET] /api/courses
+2023-03-03 09:33:20 [Logging] info: [GET] /api/courses
+2023-03-03 09:33:20 [Logging] info: [GET] /api/courses
+2023-03-03 09:34:16 [Logging] info: [GET] /api/courses
+2023-03-03 09:34:16 [Logging] info: [GET] /api/courses
+2023-03-03 09:34:48 [Logging] info: [GET] /api/courses
+2023-03-03 09:34:48 [Logging] info: [GET] /api/courses
+2023-03-03 09:34:51 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:34:51 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:35:26 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:35:30 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:30 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:33 [Logging] info: [GET] /api/courses/5
+2023-03-03 09:35:33 [Logging] info: [GET] /api/courses/5
+2023-03-03 09:35:34 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:34 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:35 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:35:35 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:35:36 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:36 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:40 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:40 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:42 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:42 [Logging] info: [GET] /api/courses
+2023-03-03 09:35:53 [Logging] info: [OPTIONS] /api/courses/6
+2023-03-03 09:35:53 [Logging] info: [DELETE] /api/courses/6
+2023-03-03 09:35:53 [Logging] info: [GET] /api/courses
+2023-03-03 09:39:17 [Logging] info: [GET] /api/courses
+2023-03-03 09:39:22 [Logging] info: [GET] /api/courses
+2023-03-03 09:39:22 [Logging] info: [GET] /api/courses
+2023-03-03 09:39:54 [Logging] info: [GET] /api/courses
+2023-03-03 09:40:00 [Logging] info: [GET] /api/courses
+2023-03-03 09:41:06 [Logging] info: [GET] /api/courses
+2023-03-03 09:41:23 [Logging] info: [GET] /api/courses
+2023-03-03 09:41:43 [Logging] info: [GET] /api/courses
+2023-03-03 09:42:01 [Logging] info: [GET] /api/courses
+2023-03-03 09:42:19 [Logging] info: [GET] /api/courses
+2023-03-03 09:43:50 [Logging] info: [GET] /api/courses
+2023-03-03 09:44:02 [Logging] info: [GET] /api/courses
+2023-03-03 09:44:08 [Logging] info: [GET] /api/courses
+2023-03-03 09:44:17 [Logging] info: [GET] /api/courses
+2023-03-03 09:44:31 [Logging] info: [GET] /api/courses
+2023-03-03 09:45:43 [Logging] info: [GET] /api/courses
+2023-03-03 09:46:15 [Logging] info: [GET] /api/courses
+2023-03-03 09:46:28 [Logging] info: [GET] /api/courses
+2023-03-03 09:46:35 [Logging] info: [GET] /api/courses
+2023-03-03 09:46:35 [Logging] info: [GET] /api/courses
+2023-03-03 09:50:54 [Logging] info: [GET] /api/courses
+2023-03-03 09:50:54 [Logging] info: [GET] /api/courses
+2023-03-03 09:51:45 [Logging] info: [GET] /api/courses
+2023-03-03 09:51:45 [Logging] info: [GET] /api/courses
+2023-03-03 09:51:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:51:49 [Logging] info: [GET] /api/courses
+2023-03-03 09:52:01 [Logging] info: [GET] /api/courses
+2023-03-03 09:53:11 [Logging] info: [GET] /api/courses
+2023-03-03 09:55:13 [Logging] info: [GET] /api/courses
+2023-03-03 09:55:15 [Logging] info: [GET] /api/courses
+2023-03-03 09:55:31 [Logging] info: [GET] /api/courses
+2023-03-03 09:55:54 [Logging] info: [GET] /api/courses
+2023-03-03 09:56:00 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:56:00 [Logging] info: [GET] /api/courses/2
+2023-03-03 09:56:04 [Logging] info: [GET] /api/courses
+2023-03-03 09:56:04 [Logging] info: [GET] /api/courses
+2023-03-03 09:56:08 [Logging] info: [GET] /api/courses
+2023-03-03 09:56:08 [Logging] info: [GET] /api/courses
+2023-03-03 09:56:56 [Logging] info: [GET] /api/courses
+2023-03-03 09:57:25 [Logging] info: [GET] /api/courses
+2023-03-03 09:57:35 [Logging] info: [GET] /api/courses
+2023-03-03 09:57:44 [Logging] info: [GET] /api/courses
+2023-03-03 09:59:09 [Logging] info: [GET] /api/courses
+2023-03-03 09:59:26 [Logging] info: [GET] /api/courses
+2023-03-03 09:59:26 [Logging] info: [GET] /api/courses
+2023-03-03 10:00:26 [Logging] info: [GET] /api/courses
+2023-03-03 10:01:05 [Logging] info: [GET] /api/courses
+2023-03-03 10:02:43 [Logging] info: [GET] /api/courses
+2023-03-03 10:02:43 [Logging] info: [GET] /api/courses
+2023-03-03 10:02:52 [Logging] info: [GET] /api/courses/3
+2023-03-03 10:02:52 [Logging] info: [GET] /api/courses/3
+2023-03-03 10:02:53 [Logging] info: [GET] /api/courses
+2023-03-03 10:02:53 [Logging] info: [GET] /api/courses
+2023-03-03 10:02:57 [Logging] info: [GET] /api/courses
+2023-03-03 10:02:57 [Logging] info: [GET] /api/courses
+2023-03-03 10:03:30 [Logging] info: [GET] /api/courses
+2023-03-03 10:03:34 [Logging] info: [GET] /api/courses
+2023-03-03 10:03:34 [Logging] info: [GET] /api/courses
+2023-03-03 10:03:46 [Logging] info: [GET] /api/courses
+2023-03-03 10:03:46 [Logging] info: [GET] /api/courses
+2023-03-03 10:05:05 [Logging] info: [GET] /api/courses
+2023-03-03 10:07:56 [Logging] info: [GET] /api/courses
+2023-03-03 10:07:57 [Logging] info: [GET] /api/courses
+2023-03-03 10:08:00 [Logging] info: [GET] /api/courses
+2023-03-03 10:08:00 [Logging] info: [GET] /api/courses
+2023-03-03 10:08:04 [Logging] info: [GET] /api/courses/2
+2023-03-03 10:08:04 [Logging] info: [GET] /api/courses/2
+2023-03-03 10:08:31 [Logging] info: [GET] /api/courses/2
+2023-03-03 10:08:31 [Logging] info: [GET] /api/courses/2
+2023-03-03 10:08:42 [Logging] info: [GET] /api/courses
+2023-03-03 10:08:42 [Logging] info: [GET] /api/courses
+2023-03-03 10:08:45 [Logging] info: [GET] /api/courses
+2023-03-03 10:08:45 [Logging] info: [GET] /api/courses
+2023-03-03 10:09:11 [Logging] info: [GET] /api/courses
+2023-03-03 10:09:11 [Logging] info: [GET] /api/courses
+2023-03-03 10:09:36 [Logging] info: [GET] /api/courses
+2023-03-03 10:09:37 [Logging] info: [GET] /api/courses
+2023-03-03 10:10:30 [Logging] info: [GET] /api/courses
+2023-03-03 10:10:42 [Logging] info: [GET] /api/courses
+2023-03-03 10:10:57 [Logging] info: [GET] /api/courses
+2023-03-03 10:11:13 [Logging] info: [GET] /api/courses
+2023-03-03 10:12:52 [Logging] info: [GET] /api/courses
+2023-03-03 10:12:52 [Logging] info: [GET] /api/courses
+2023-03-03 10:13:14 [Logging] info: [GET] /api/courses
+2023-03-03 14:18:53 [Logging] info: [GET] /api/book
+2023-03-03 14:20:34 [Logging] info: [POST] /api/book
+2023-03-03 14:20:37 [Logging] info: [GET] /api/book
+2023-03-03 14:22:05 [Logging] info: [PUT] /api/book/1
+2023-03-03 14:23:00 [Logging] info: [PUT] /api/book/0001
+2023-03-03 14:23:04 [Logging] info: [GET] /api/book
+2023-03-03 14:33:17 [Logging] info: [POST] /api/member
+2023-03-03 14:33:17 [Logging] error: SequelizeValidationError: notNull Violation: Member.code cannot be null,
+notNull Violation: Member.name cannot be null
+    at InstanceValidator._validate (D:\javascript\BackendTest\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (D:\javascript\BackendTest\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (D:\javascript\BackendTest\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:2368:7)
+    at async Member.create (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1344:12)
+    at async Module.createMember (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:12:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:15:28
+2023-03-03 14:33:39 [Logging] info: [POST] /api/member
+2023-03-03 14:33:42 [Logging] info: [GET] /api/member
+2023-03-03 14:34:08 [Logging] info: [PUT] /api/book/0001
+2023-03-03 14:34:08 [Logging] error: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Module.updateBook (file:///D:/javascript/BackendTest/src/modules/master/book/services/services.js:19:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/javascript/BackendTest/src/modules/master/book/controllers/controller.js:20:25
+2023-03-03 14:34:23 [Logging] info: [PUT] /api/member/0001
+2023-03-03 14:34:27 [Logging] info: [GET] /api/member
