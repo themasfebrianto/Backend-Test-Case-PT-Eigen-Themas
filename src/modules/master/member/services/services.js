@@ -6,19 +6,17 @@ export const getAllMembers = async () => {
     return await Members.findAll({
         attributes: {
             include: [
-                [sequelize.fn('COUNT', sequelize.col('memberBorrows.id')), 'borrowedBooks']
-            ]
+                [
+                    sequelize.literal(
+                        '(SELECT COUNT(*) FROM "Borrows" WHERE "Borrows"."memberCode" = "Members"."code" AND "Borrows"."returnedDate" IS NULL)'
+                    ),
+                    'borrowedBooks',
+                ],
+            ],
         },
-        include: [
-            {
-                model: Borrow,
-                as: 'memberBorrows',
-                attributes: []
-            }
-        ],
-        group: ['Members.code']
     });
 };
+
 
 
 

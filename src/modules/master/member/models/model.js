@@ -9,6 +9,10 @@ const Member = sequelize.define('Members', {
     name: {
         type: Sequelize.STRING(255),
         allowNull: false,
+    },
+    borrowedBooks: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
     }
 }, {
     schema: 'public',
