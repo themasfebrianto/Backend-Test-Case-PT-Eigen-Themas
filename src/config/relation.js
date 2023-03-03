@@ -1,16 +1,12 @@
-// import Courses from '../modules/master/courses/models/model.js';
-// import LessonsGroups from '../modules/master/lessonsGroups/models/model.js';
-// import Lessons from '../modules/master/lessons/models/model.js';
-// import LessonsContents from '../modules/master/lessonsContents/models/model.js';
+import Member from '../../src/modules/master/member/models/model.js';
+import Book from '../../src/modules/master/book/models/model.js';
+import Borrow from '../../src/modules/master/borrow/models/model.js';
 
-// // Define the associations between the models
-// export const defineAssociations = () => {
-//     Courses.hasMany(LessonsGroups);
-//     LessonsGroups.belongsTo(Courses);
+// Define the associations between the models
+export const defineAssociations = () => {
+    Member.hasMany(Borrow);
+    Borrow.belongsTo(Member);
 
-//     LessonsGroups.hasMany(Lessons);
-//     Lessons.belongsTo(LessonsGroups);
-
-//     Lessons.hasMany(LessonsContents);
-//     LessonsContents.belongsTo(Lessons);
-// };
+    Book.hasMany(Borrow);
+    Borrow.belongsTo(Book);
+};

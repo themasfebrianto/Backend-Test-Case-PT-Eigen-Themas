@@ -1,7 +1,7 @@
 import { sequelize, Sequelize } from '../../../../helpers/modelHelpers.js';
 
 
-const Book = sequelize.define('Book', {
+const Books = sequelize.define('Books', {
     code: {
         type: Sequelize.STRING(10),
         allowNull: false,
@@ -21,4 +21,4 @@ const Book = sequelize.define('Book', {
     },
 }, { schema: 'public' });
 
-export default Book;
+export default Books;

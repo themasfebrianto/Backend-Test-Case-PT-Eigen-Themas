@@ -6,8 +6,8 @@ export const getMembers = asyncHandler(async (req, res) => {
     res.json(members);
 });
 
-export const getMemberById = asyncHandler(async (req, res) => {
-    const member = await memberService.getMemberById(req.params.id);
+export const getMemberByCode = asyncHandler(async (req, res) => {
+    const member = await memberService.getMemberByCode(req.params.code);
     res.json(member);
 });
 
@@ -17,11 +17,11 @@ export const createMember = asyncHandler(async (req, res) => {
 });
 
 export const updateMember = asyncHandler(async (req, res) => {
-    const updatedMember = await memberService.updateMember(req.params.id, req.body);
+    const updatedMember = await memberService.updateMember(req.params.code, req.body);
     res.json(updatedMember);
 });
 
 export const deleteMember = asyncHandler(async (req, res) => {
-    const deletedRows = await memberService.deleteMember(req.params.id);
+    const deletedRows = await memberService.deleteMember(req.params.code);
     res.json(deletedRows);
 });

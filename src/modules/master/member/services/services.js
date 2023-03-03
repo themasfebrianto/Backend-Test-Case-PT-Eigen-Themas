@@ -1,19 +1,19 @@
-import Member from '../models/model.js';
+import Members from '../models/model.js';
 
 export const getAllMembers = async () => {
-    return await Member.findAll();
+    return await Members.findAll();
 };
 
-export const getMemberById = async (code) => {
-    return await Member.findByPk(code);
+export const getMemberByCode = async (code) => {
+    return await Members.findByPk(code);
 };
 
 export const createMember = async (memberData) => {
-    return await Member.create(memberData);
+    return await Members.create(memberData);
 };
 
 export const updateMember = async (code, memberData) => {
-    const member = await Member.findByPk(code);
+    const member = await Members.findByPk(code);
     if (!member) {
         return null;
     }
@@ -21,7 +21,7 @@ export const updateMember = async (code, memberData) => {
 };
 
 export const deleteMember = async (code) => {
-    const member = await Member.findByPk(code);
+    const member = await Members.findByPk(code);
     if (!member) {
         return 0;
     }

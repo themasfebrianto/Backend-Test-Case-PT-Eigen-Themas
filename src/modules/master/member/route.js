@@ -1,7 +1,7 @@
 import express from 'express';
 import {
     getMembers,
-    getMemberById,
+    getMemberByCode,
     createMember,
     updateMember,
     deleteMember
@@ -10,9 +10,9 @@ import {
 const router = express.Router();
 
 router.get('/', getMembers);
-router.get('/:id', getMemberById);
+router.get('/:code', getMemberByCode);
 router.post('/', createMember);
-router.put('/:id', updateMember);
-router.delete('/:id', deleteMember);
+router.put('/:code', updateMember);
+router.delete('/:code', deleteMember);
 
 export default router;

@@ -11,7 +11,7 @@ const Borrow = sequelize.define('Borrow', {
         type: Sequelize.STRING(10),
         allowNull: false,
         references: {
-            model: 'Member',
+            model: 'Members',
             key: 'code'
         }
     },
@@ -19,7 +19,7 @@ const Borrow = sequelize.define('Borrow', {
         type: Sequelize.STRING(10),
         allowNull: false,
         references: {
-            model: 'Book',
+            model: 'Books',
             key: 'code'
         }
     },

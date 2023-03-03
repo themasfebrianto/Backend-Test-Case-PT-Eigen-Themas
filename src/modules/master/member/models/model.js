@@ -1,6 +1,6 @@
 import { sequelize, Sequelize } from '../../../../helpers/modelHelpers.js';
 
-const Member = sequelize.define('Member', {
+const Member = sequelize.define('Members', {
     code: {
         type: Sequelize.STRING(10),
         allowNull: false,
@@ -10,6 +10,9 @@ const Member = sequelize.define('Member', {
         type: Sequelize.STRING(255),
         allowNull: false,
     }
-}, { schema: 'public' });
+}, {
+    schema: 'public',
+    tableName: 'Members'
+});
 
 export default Member;
