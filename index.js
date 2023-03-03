@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import route from "./src/routes.js";
 import { sequelize } from './src/helpers/modelHelpers.js';
-// import { defineAssociations } from './src/config/relation.js';
+import { defineAssociations } from './src/config/relation.js';
 import { createLogger, format, transports } from "winston";
 import helmet from 'helmet';
 import asyncHandler from 'express-async-handler';
@@ -17,7 +17,7 @@ const app = express(); // add express
 (async () => {
     try {
         await sequelize.sync(); //sync model
-        // defineAssociations(); // define relation
+        defineAssociations(); // define relation
         console.log('Database synced successfully.');
     } catch (error) {
         console.error('Error syncing database:', error);

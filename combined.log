@@ -1217,3 +1217,154 @@ notNull Violation: Member.name cannot be null
 2023-03-03 15:59:48 [Logging] info: [POST] /api/borrow
 2023-03-03 15:59:54 [Logging] info: [POST] /api/borrow
 2023-03-03 16:00:00 [Logging] info: [POST] /api/borrow
+2023-03-03 16:01:51 [Logging] info: [GET] /api/book
+2023-03-03 16:01:56 [Logging] info: [GET] /api/member
+2023-03-03 16:02:58 [Logging] info: [POST] /api/borrow
+2023-03-03 16:03:02 [Logging] info: [POST] /api/borrow
+2023-03-03 16:03:19 [Logging] info: [GET] /api/member
+2023-03-03 16:07:05 [Logging] info: [GET] /api/member
+2023-03-03 16:07:05 [Logging] error: SequelizeEagerLoadingError: Borrow is not associated to Members!
+    at Members._getIncludedAssociation (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:565:13)
+    at Members._validateIncludedElement (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:502:53)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Members._validateIncludedElements (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:417:39)
+    at Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1118:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:07:20 [Logging] info: [GET] /api/member
+2023-03-03 16:07:20 [Logging] error: SequelizeEagerLoadingError: Borrow is not associated to Members!
+    at Members._getIncludedAssociation (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:565:13)
+    at Members._validateIncludedElement (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:502:53)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Members._validateIncludedElements (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:417:39)
+    at Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1118:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:07:43 [Logging] info: [GET] /api/member
+2023-03-03 16:07:43 [Logging] error: Error
+    at Query.run (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1134:21)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:07:54 [Logging] info: [GET] /api/member
+2023-03-03 16:07:54 [Logging] error: Error
+    at Query.run (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1134:21)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:10:48 [Logging] info: [GET] /api/member
+2023-03-03 16:10:48 [Logging] error: SequelizeEagerLoadingError: Borrow is associated to Members using an alias. You've included an alias (Borrows), but it does not match the alias(es) defined in your association (borrows).
+    at Members._getIncludedAssociation (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:574:15)
+    at Members._validateIncludedElement (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:502:53)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Members._validateIncludedElements (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:417:39)
+    at Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1118:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:13:46 [Logging] info: [GET] /api/member
+2023-03-03 16:13:46 [Logging] error: SequelizeEagerLoadingError: Borrow is associated to Members using an alias. You've included an alias (Borrows), but it does not match the alias(es) defined in your association (borrows).
+    at Members._getIncludedAssociation (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:574:15)
+    at Members._validateIncludedElement (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:502:53)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Members._validateIncludedElements (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:417:39)
+    at Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1118:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:14:10 [Logging] info: [GET] /api/member
+2023-03-03 16:14:10 [Logging] error: SequelizeEagerLoadingError: Borrow is associated to Members using an alias. You've included an alias (Borrows), but it does not match the alias(es) defined in your association (borrows).
+    at Members._getIncludedAssociation (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:574:15)
+    at Members._validateIncludedElement (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:502:53)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Members._validateIncludedElements (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:417:39)
+    at Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1118:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:16:49 [Logging] info: [GET] /api/member
+2023-03-03 16:16:49 [Logging] error: Error
+    at Query.run (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1134:21)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:17:29 [Logging] info: [GET] /api/member
+2023-03-03 16:17:29 [Logging] error: Error
+    at Query.run (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1134:21)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:17:38 [Logging] info: [GET] /api/member
+2023-03-03 16:17:38 [Logging] error: Error
+    at Query.run (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (D:\javascript\BackendTest\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1134:21)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:21:11 [Logging] info: [GET] /api/member
+2023-03-03 16:21:11 [Logging] error: SequelizeEagerLoadingError: Borrow is associated to Members using an alias. You've included an alias (borrows), but it does not match the alias(es) defined in your association (memberBorrows).
+    at Members._getIncludedAssociation (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:574:15)
+    at Members._validateIncludedElement (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:502:53)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Members._validateIncludedElements (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:417:39)
+    at Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1118:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:22:21 [Logging] info: [GET] /api/member
+2023-03-03 16:22:21 [Logging] error: SequelizeEagerLoadingError: Borrow is associated to Members using an alias. You've included an alias (borrows), but it does not match the alias(es) defined in your association (memberBorrows).
+    at Members._getIncludedAssociation (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:574:15)
+    at Members._validateIncludedElement (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:502:53)
+    at D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:421:37
+    at Array.map (<anonymous>)
+    at Members._validateIncludedElements (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:417:39)
+    at Members.findAll (D:\javascript\BackendTest\node_modules\sequelize\lib\model.js:1118:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:12)
+    at async file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:21
+2023-03-03 16:24:40 [Logging] info: [GET] /api/member
+2023-03-03 16:24:40 [Logging] error: ReferenceError: Member is not defined
+    at Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:5)
+    at file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:41
+    at asyncUtilWrap (D:\javascript\BackendTest\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (D:\javascript\BackendTest\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\javascript\BackendTest\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\javascript\BackendTest\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\javascript\BackendTest\node_modules\express\lib\router\layer.js:95:5)
+    at D:\javascript\BackendTest\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:280:10)
+2023-03-03 16:24:51 [Logging] info: [GET] /api/member
+2023-03-03 16:24:51 [Logging] error: ReferenceError: Member is not defined
+    at Module.getAllMembers (file:///D:/javascript/BackendTest/src/modules/master/member/services/services.js:6:5)
+    at file:///D:/javascript/BackendTest/src/modules/master/member/controllers/controller.js:5:41
+    at asyncUtilWrap (D:\javascript\BackendTest\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (D:\javascript\BackendTest\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\javascript\BackendTest\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\javascript\BackendTest\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\javascript\BackendTest\node_modules\express\lib\router\layer.js:95:5)
+    at D:\javascript\BackendTest\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\javascript\BackendTest\node_modules\express\lib\router\index.js:280:10)
