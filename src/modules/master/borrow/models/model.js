@@ -28,6 +28,10 @@ const Borrow = sequelize.define('Borrow', {
         allowNull: false,
         defaultValue: Sequelize.NOW
     },
+    dueDate: {
+        type: Sequelize.DATEONLY,
+        allowNull: false,
+    },
     returnedDate: {
         type: Sequelize.DATEONLY,
         allowNull: true

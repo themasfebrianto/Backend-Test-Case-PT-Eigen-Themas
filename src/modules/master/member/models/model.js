@@ -13,6 +13,11 @@ const Member = sequelize.define('Members', {
     borrowedBooks: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
+    },
+    penaltyExpiry: {
+        type: Sequelize.DATE,
+        allowNull: true,
+        defaultValue: null
     }
 }, {
     schema: 'public',

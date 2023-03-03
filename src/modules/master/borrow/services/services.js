@@ -54,10 +54,14 @@ export const borrowBook = async (memberCode, bookCode) => {
             return { status: 400, message: 'Book is not available' };
         }
 
+        const dueDate = new Date();
+        dueDate.setDate(dueDate.getDate() + 7); // set due date to 7 days from today
+
         const transaction = await Borrow.create({
             memberCode: member.code,
             bookCode: book.code,
-            borrowedAt: new Date(),
+            borrowedDate: new Date(),
+            dueDate: dueDate,
         });
 
         await book.update({ stock: book.stock - 1 });
@@ -69,6 +73,7 @@ export const borrowBook = async (memberCode, bookCode) => {
         return { status: 500, message: 'Internal server error' };
     }
 };
+
 
 
 export const returnBook = async (memberCode, bookCode) => {
@@ -87,21 +92,45 @@ export const returnBook = async (memberCode, bookCode) => {
         });
 
         if (!borrow) {
+            await transaction.rollback();
             return { status: 404, message: 'Borrow record not found' };
         }
 
         const book = await Book.findOne({ where: { code: bookCode }, transaction });
 
         if (!book) {
+            await transaction.rollback();
             return { status: 404, message: 'Book not found' };
         }
 
-        await borrow.update({ returnedDate: new Date() }, { transaction });
+        const currentDate = new Date();
+        const dueDate = new Date(borrow.dueDate);
+        const daysLate = Math.round((currentDate - dueDate) / (1000 * 60 * 60 * 24));
+
+        if (daysLate > 7) {
+            // Update the penalty expiry for the member
+            const penaltyEndDate = new Date();
+            penaltyEndDate.setDate(penaltyEndDate.getDate() + 3);
+            const member = await Member.findOne({ where: { code: memberCode }, transaction });
+            if (!member) {
+                await transaction.rollback();
+                return { status: 404, message: 'Member not found' };
+            }
+            member.penaltyExpiry = penaltyEndDate;
+            await member.save({ transaction });
+            await transaction.commit();
+            return { status: 400, message: 'Book returned late, member subject to penalty' };
+        }
+
+        const returnedDate = new Date();
+        await borrow.update({ returnedDate }, { transaction });
         await book.update({ stock: book.stock + 1 }, { transaction });
-
         const member = await Member.findOne({ where: { code: memberCode }, transaction });
+        if (!member) {
+            await transaction.rollback();
+            return { status: 404, message: 'Member not found' };
+        }
         await member.update({ borrowedBooks: member.borrowedBooks - 1 }, { transaction });
-
         await transaction.commit();
 
         return { status: 200, message: 'Book returned successfully' };
