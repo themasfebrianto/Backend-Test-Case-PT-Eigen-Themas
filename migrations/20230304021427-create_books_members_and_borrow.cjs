@@ -67,7 +67,7 @@ module.exports = {
       }
     });
 
-    await queryInterface.createTable('Borrow', {
+    await queryInterface.createTable('Borrows', {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -126,7 +126,7 @@ module.exports = {
      * await queryInterface.dropTable('users');
      */
 
-    await queryInterface.dropTable('Borrow');
+    await queryInterface.dropTable('Borrows');
     await queryInterface.dropTable('Members');
     await queryInterface.dropTable('Books');
   }
