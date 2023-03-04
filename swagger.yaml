@@ -1,0 +1,361 @@
+openapi: 3.0.0
+info:
+  title: Book Borrowing API
+  version: 1.0.0
+  description: API for borrowing and returning books
+  contact:
+    name: Themas Febrianto
+    email: themasfebrianto13@gmail.com
+servers:
+  - url: http://localhost:8000/api
+paths:
+  /book:
+    get:
+      summary: Get all books
+      responses:
+        '200':
+          description: Successful response
+    post:
+      summary: Add a new book
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                code:
+                  type: string
+                  example: JK-45
+                title:
+                  type: string
+                  example: Harry Potter
+                author:
+                  type: string
+                  example: J.K Rowling
+                stock:
+                  type: integer
+                  example: 1
+      responses:
+        '201':
+          description: Successful response
+        '400':
+          description: Invalid request body
+    /{bookCode}:
+      get:
+        summary: Get a specific book by code
+        parameters:
+          - in: path
+            name: bookCode
+            description: Book code
+            required: true
+            schema:
+              type: string
+              example: JK-45
+        responses:
+          '200':
+            description: Successful response
+          '404':
+            description: Book not found
+      put:
+        summary: Update a specific book by code
+        parameters:
+          - in: path
+            name: bookCode
+            description: Book code
+            required: true
+            schema:
+              type: string
+              example: JK-45
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  title:
+                    type: string
+                    example: Harry Potter and the Chamber of Secrets
+                  author:
+                    type: string
+                    example: J.K Rowling
+                  stock:
+                    type: integer
+                    example: 2
+        responses:
+          '200':
+            description: Successful response
+          '400':
+            description: Invalid request body
+          '404':
+            description: Book not found
+    /book/{code}:
+    parameters:
+      - in: path
+        name: code
+        description: Book code
+        required: true
+        schema:
+          type: string
+          example: JK-45
+    put:
+      summary: Update a book by code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  example: Harry Potter and the Chamber of Secrets
+                author:
+                  type: string
+                  example: J.K Rowling
+                stock:
+                  type: integer
+                  example: 3
+              required:
+                - title
+                - author
+                - stock
+      responses:
+        '200':
+          description: Successful update
+        '404':
+          description: Book not found
+    delete:
+      summary: Delete a book by code
+      responses:
+        '200':
+          description: Successful delete
+        '404':
+          description: Book not found
+  /member:
+    get:
+      summary: Get all members
+      responses:
+        '200':
+          description: Successful response
+    post:
+      summary: Add a new member
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                code:
+                  type: string
+                  example: M001
+                name:
+                  type: string
+                  example: Angga
+                
+      responses:
+        '201':
+          description: Successful response
+        '400':
+          description: Invalid request body
+    /{memberCode}:
+    get:
+      summary: Get a specific member by code
+      parameters:
+        - in: path
+          name: memberCode
+          description: Member code
+          required: true
+          schema:
+            type: string
+            example: M001
+      responses:
+        '200':
+          description: Successful response
+        '404':
+          description: Member not found
+    put:
+      summary: Update a specific member by code
+      parameters:
+        - in: path
+          name: memberCode
+          description: Member code
+          required: true
+          schema:
+            type: string
+            example: M001
+        - in: body
+          name: member
+          description: The updated member object
+          required: true
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+                example: John
+              borrowedBooks:
+                type: integer
+                example: 1
+              penaltyExpiry:
+                type: string
+                format: date-time
+                example: "2023-03-10T00:00:00.000Z"
+      responses:
+        '200':
+          description: Successful update
+        '404':
+          description: Member not found
+    delete:
+      summary: Delete a specific member by code
+      parameters:
+        - in: path
+          name: memberCode
+          description: Member code
+          required: true
+          schema:
+            type: string
+            example: M001
+      responses:
+        '204':
+          description: Successful deletion
+        '404':
+          description: Member not found
+  /borrow:
+    post:
+      summary: Borrow a book
+      description: Members can borrow books with conditions
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - memberCode
+                - bookCode
+              properties:
+                memberCode:
+                  type: string
+                  description: Member code
+                  example: M001
+                bookCode:
+                  type: string
+                  description: Book code
+                  example: JK-45
+      responses:
+        '200':
+          description: Successful borrow
+        '400':
+          description: Bad request
+        '403':
+          description: Forbidden to borrow more books
+        '404':
+          description: Member or book not found
+        '409':
+          description: Book is already borrowed by another member
+        '412':
+          description: Member is currently being penalized
+
+  /return:
+      post:
+        summary: Return a book
+        description: Members can return a book with conditions
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - memberCode
+                  - bookCode
+                properties:
+                  memberCode:
+                    type: string
+                    description: Member code
+                    example: M001
+                  bookCode:
+                    type: string
+                    description: Book code
+                    example: JK-45
+        responses:
+          '200':
+            description: Successful return
+          '400':
+            description: Bad request
+          '404':
+            description: Member or book not found
+          '412':
+            description: Member didn't borrow this book or penalty exceeded
+components:
+  schemas:
+    Book:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Book code
+        title:
+          type: string
+          description: Book title
+        author:
+          type: string
+          description: Book author
+        stock:
+          type: integer
+          description: Number of available copies of the book
+      required:
+        - code
+        - title
+        - author
+        - stock
+
+    Member:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Member code
+        name:
+          type: string
+          description: Member name
+        borrowedBooks:
+          type: integer
+          description: Number of books the member has borrowed
+        penaltyExpiry:
+          type: string
+          format: date-time
+          description: The date and time the member's penalty expires
+      required:
+        - code
+        - name
+
+    Borrow:
+      type: object
+      properties:
+        memberCode:
+          type: string
+          description: The code of the member borrowing the book
+        bookCode:
+          type: string
+          description: The code of the book being borrowed
+        borrowDate:
+          type: string
+          format: date-time
+          description: The date and time the book was borrowed
+        returnDate:
+          type: string
+          format: date-time
+          description: The date and time the book is due to be returned
+        returnedDate:
+          type: string
+          format: date-time
+          description: The date and time the book was returned
+      required:
+        - memberCode
+        - bookCode
+        - borrowDate
+        - returnDate

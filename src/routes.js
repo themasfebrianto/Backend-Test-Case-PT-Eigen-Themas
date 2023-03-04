@@ -7,6 +7,6 @@ const router = express.Router();
 
 router.use('/book', bookRoutes);
 router.use('/member', memberRoutes);
-router.use('/borrow', borrowRoutes);
+router.use('/', borrowRoutes);
 
 export default router;

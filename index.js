@@ -8,8 +8,8 @@ import { createLogger, format, transports } from "winston";
 import helmet from 'helmet';
 import asyncHandler from 'express-async-handler';
 import 'express-async-errors'; // Import express-async-errors to handle async errors
-
-const { combine, timestamp, label, printf } = format;
+import swaggerUi from 'swagger-ui-express';
+import yamljs from 'yamljs';
 
 dotenv.config(); // import env config
 const app = express(); // add express
@@ -25,15 +25,15 @@ const app = express(); // add express
 })();
 
 // Initialize logger
-const logFormat = printf(({ level, message, label, timestamp }) => {
+const logFormat = format.printf(({ level, message, label, timestamp }) => {
     return `${timestamp} [${label}] ${level}: ${message}`;
 });
 
 const logger = createLogger({
     level: "info",
-    format: combine(
-        label({ label: "Logging" }),
-        timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
+    format: format.combine(
+        format.label({ label: "Logging" }),
+        format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
         logFormat
     ),
     transports: [
@@ -53,6 +53,12 @@ app.use(cors());
 app.use(express.json());
 app.use(helmet()); // Add helmet middleware
 app.use('/api', route);
+
+// Load Swagger spec from YAML file
+const swaggerDocument = yamljs.load('./swagger.yaml');
+
+// Serve Swagger UI at /docs route
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
