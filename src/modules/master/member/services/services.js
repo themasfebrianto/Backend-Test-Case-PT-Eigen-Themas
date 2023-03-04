@@ -1,21 +1,36 @@
 import Members from '../models/model.js';
 import Borrow from '../../borrow/models/model.js';
+import Book from '../../book/models/model.js';
 import { sequelize } from '../../../../helpers/modelHelpers.js';
 
 export const getAllMembers = async () => {
-    return await Members.findAll({
-        attributes: {
-            include: [
-                [
-                    sequelize.literal(
-                        '(SELECT COUNT(*) FROM "Borrows" WHERE "Borrows"."memberCode" = "Members"."code" AND "Borrows"."returnedDate" IS NULL)'
-                    ),
-                    'borrowedBooks',
+    try {
+        return await Members.findAll({
+            attributes: {
+                include: [
+                    [
+                        sequelize.literal(
+                            '(SELECT COUNT(*) FROM "Borrows" WHERE "Borrows"."memberCode" = "Members"."code" AND "Borrows"."returnedDate" IS NULL)'
+                        ),
+                        'borrowedBooks',
+                    ],
                 ],
+            },
+            include: [
+                {
+                    model: Borrow,
+                    as: 'memberBorrows',
+                    required: false,
+                    where: { returnedDate: null },
+                },
             ],
-        },
-    });
+        });
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
 };
+
 
 
 
