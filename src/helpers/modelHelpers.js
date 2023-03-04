@@ -9,6 +9,4 @@ const sequelize = new Sequelize(process.env.DATABASE_URL, {
     schema: 'public',
 });
 
-sequelize.sync();
-
 export { sequelize, Sequelize };

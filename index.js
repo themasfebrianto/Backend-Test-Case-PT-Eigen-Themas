@@ -14,15 +14,7 @@ import yamljs from 'yamljs';
 dotenv.config(); // import env config
 const app = express(); // add express
 
-(async () => {
-    try {
-        await sequelize.sync(); //sync model
-        defineAssociations(); // define relation
-        console.log('Database synced successfully.');
-    } catch (error) {
-        console.error('Error syncing database:', error);
-    }
-})();
+defineAssociations(); // define relation
 
 // Initialize logger
 const logFormat = format.printf(({ level, message, label, timestamp }) => {
