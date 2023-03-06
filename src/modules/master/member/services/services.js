@@ -21,7 +21,7 @@ export const getAllMembers = async () => {
                     model: Borrow,
                     as: 'memberBorrows',
                     required: false,
-                    attributes: ['id', 'dueDate', 'returnedDate'], // specify the correct attributes for the Borrow model
+                    attributes: ['dueDate'],
                     include: [
                         {
                             model: Book,
