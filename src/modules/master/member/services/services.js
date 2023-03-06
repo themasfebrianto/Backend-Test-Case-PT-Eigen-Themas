@@ -21,10 +21,19 @@ export const getAllMembers = async () => {
                     model: Borrow,
                     as: 'memberBorrows',
                     required: false,
+                    attributes: ['id', 'dueDate', 'returnedDate'], // specify the correct attributes for the Borrow model
+                    include: [
+                        {
+                            model: Book,
+                            as: 'book',
+                            attributes: ['title', 'author'],
+                        },
+                    ],
                     where: { returnedDate: null },
                 },
             ],
         });
+
     } catch (error) {
         console.error(error);
         throw error;
